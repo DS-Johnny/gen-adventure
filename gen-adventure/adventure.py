@@ -28,7 +28,6 @@ class Adventure(object):
         self.__end_screen = False
         self.__start_screen = True
         self.__page = 1
-        self.__option = 0
         self.__page_text = ''
         
         # Button font and rect
@@ -120,7 +119,6 @@ class Adventure(object):
                             self.__start_screen = False    
                         elif self.__end_screen:
                             self.__page = 1
-                            self.__option = 0
                             self.__start_screen = True
                             self.__end_screen = False
 
