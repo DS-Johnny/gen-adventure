@@ -153,6 +153,6 @@ class Adventure(object):
 
 if __name__ == "__main__":
 
-    adventure = Adventure("gen-adventure/deadpool.csv")
+    adventure = Adventure("gen-adventure/detective.csv")
     
     adventure.start()

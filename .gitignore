@@ -1,3 +1,5 @@
 env_gen_adventure/
 gen-adventure/__pycache__/
 game.py
+.env
+story_imaginator_original.py
