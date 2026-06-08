@@ -11,12 +11,12 @@ class Adventure(object):
         pygame.display.set_caption('Gen-Adventure')
 
         # Pages
-        self.pages = pg = Pages(story_path)
+        self.pages = Pages(story_path)
 
 
         # Window
-        self.WINDOW_WIDTH = 800
-        self.WINDOW_HEIGHT = 800
+        self.WINDOW_WIDTH = 1200
+        self.WINDOW_HEIGHT = 1000
         self.window = pygame.display.set_mode((self.WINDOW_WIDTH, self.WINDOW_HEIGHT))
 
         # Colors
@@ -32,7 +32,7 @@ class Adventure(object):
         
         # Button font and rect
         self.__font = pygame.font.SysFont(None, 36)
-        self.__button_rect = pygame.Rect((self.WINDOW_WIDTH - 200) //2, 600, 200, 50)
+        self.__button_rect = pygame.Rect((self.WINDOW_WIDTH - 200) //2, (self.WINDOW_HEIGHT -200 //2), 200, 50)
 
         # Page_text font and position
         self.font_page_text = pygame.font.SysFont('rasa', 30)
@@ -75,11 +75,11 @@ class Adventure(object):
     # Create dinamic buttons
     def create_buttons(self):
         self.__buttons.clear()
-        width = 700
+        width = 1200
         height = 40
         space = 20
-        y_inicial = 600
-        x = (800 - width) // 2
+        y_inicial = 800
+        x = 0 #(self.WINDOW_WIDTH - 600) //2
 
         for i, text in enumerate(self.__option_list):
             y = y_inicial + i * (height + space)
@@ -96,7 +96,7 @@ class Adventure(object):
 
     def game_over(self):
         end_font = pygame.font.SysFont('rasa', 40)
-        self.draw_multiline_text('The end!', end_font, self.text_color, 350, 500, 600)
+        self.draw_multiline_text('The end!', end_font, self.text_color, 600, 500, 600)
         self.draw_button('Restart')
             
             
@@ -126,8 +126,10 @@ class Adventure(object):
                         for i, (rect, text) in enumerate(self.__buttons):
                             if rect.collidepoint(event.pos):
                                 print(f"You chose: {text}")
-                                opcao = options_dict[self.__option_list.index(text)]
-                                self.__page = opcao[text]
+                                # opcao = options_dict[self.__option_list.index(text)]
+                                # opcao = self.pages.get_target_by_text(self.__page, text)
+                                # self.__page = opcao[text]
+                                self.__page = self.pages.get_target_by_text(self.__page, text)
 
 
             if self.__start_screen:
@@ -136,7 +138,7 @@ class Adventure(object):
             else:
                 # Exibe o primeiro texto e inicia o jogo
                 page_text = self.pages.get_page_text(self.__page)
-                self.draw_multiline_text(page_text, self.font_page_text, self.text_color, 100, 200, 600)
+                self.draw_multiline_text(page_text, self.font_page_text, self.text_color, (self.WINDOW_WIDTH) //4, 200, 600)
                 self.__option_list, options_dict = self.pages.get_options(self.__page)
                 
                 self.create_buttons()
@@ -152,6 +154,7 @@ class Adventure(object):
 
 if __name__ == "__main__":
 
-    adventure = Adventure("gen_adventure/detective.csv")
+    # adventure = Adventure("gen_adventure/hacker.csv")
+    adventure = Adventure("gen_adventure/formatura.json")
     
     adventure.start()
