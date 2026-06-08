@@ -1,0 +1,322 @@
+INTERACTIVE STORY GENERATION INSTRUCTIONS FOR CSV
+=================================================
+
+OBJECTIVE
+---------
+Create an interactive story in CSV format (UTF-8 encoding, comma-separated) with exactly 40 rows (or the specified number), where each row represents a "page" of the story. The player progresses by making choices that lead from one ID to another until reaching pages without options (endings).
+
+LANGUAGE RULE
+-------------
+- If the requested theme is written in English, the entire story must be written in English.
+- If the requested theme is written in Portuguese, the entire story must be written in Portuguese.
+- All narrative text, dialogues, descriptions, endings, and choices must consistently follow the language of the requested theme.
+
+CSV STRUCTURE (3 REQUIRED COLUMNS)
+----------------------------------
+id,text,options
+
+- id: Integer from 1 to N (sequential starting at 1)
+- text: String containing the page narrative. It may include dialogues, descriptions, and sensations. It should end with a situation that requires a choice.
+- options: String representing a list of dictionaries in a JSON-like format. Example: "[{'choice text': destination_id}, {'Another choice': destination_id2}]"
+
+MANDATORY RULES (VALIDATION AND CONSISTENCY)
+--------------------------------------------
+
+1. IDs:
+   - The file must contain exactly N entries with IDs from 1 to N.
+   - No choice may point to an ID outside the range 1..N.
+   - No choice may point to its own ID (unintentional infinite loops are allowed only with caution).
+   - Ending pages must have options = "[]" (empty list).
+
+2. options column format:
+   - Must be a string representing a list of dictionaries.
+   - Each dictionary contains ONE key (choice text) and ONE integer value (destination ID).
+   - Use single quotes for consistency.
+   - Valid example: "[{'Go to the forest': 2}, {'Stay in the cabin': 3}]"
+   - Invalid example (do not use): "[{'Go': 2, 'Stay': 3}]"
+
+3. text:
+   - Each page must contain enough context for the player to understand the situation.
+   - Use dialogues inside quotation marks to bring characters to life.
+   - Add sensory details (visual, auditory, tactile) for immersion.
+   - Ending pages may contain exciting, tragic, humorous, or open-ended conclusions.
+
+4. Number of options:
+   - Recommended: 2 to 3 options per page (except ending pages).
+   - Avoid single-option pages unless they are an intentional narrative transition.
+   - Pages with 4 or more options are allowed if well written.
+
+INTERACTIVE NARRATIVE BEST PRACTICES
+------------------------------------
+- Cause and effect: every choice should lead to a coherent result.
+- Replayability: include multiple endings and hidden paths.
+- Memorable characters: use distinctive dialogue.
+- Pacing: alternate between action, dialogue, and introspection.
+- Surprises: include twists (e.g. allies becoming villains, hidden truths).
+- Avoid narrative bias: no choice should appear obviously "right" or "wrong" at first glance.
+
+VALIDATION CHECKLIST (BEFORE DELIVERING)
+----------------------------------------
+[ ] The file contains exactly N rows (N = number of IDs).
+[ ] IDs are sequential from 1 to N.
+[ ] No option points to an ID greater than N or less than 1.
+[ ] No option is "[]" while still containing narrative content that implies continuation.
+[ ] options use single quotes for keys and double quotes for the CSV field.
+[ ] No blank lines exist inside the file.
+[ ] text does not contain unescaped commas (use double quotes around the field).
+[ ] All destinations exist and are reachable from page 1 (connected graph).
+
+INSTRUCTIONS FOR THE AI AGENT
+-----------------------------
+1. Receive the story theme from the user.
+2. Structure the story with 40 entries and IDs from 1 to 40.
+3. Every choice must point to an ID between 1 and 40.
+4. Use dialogues, descriptions, and plot twists typical of the chosen theme.
+5. End with pages that have no options (options = "[]").
+6. Ensure the decision graph is connected starting from ID 1.
+7. Save the file in CSV format using UTF-8 encoding.
+8. Deliver the file for download or display the formatted content.
+
+## CSV / PANDAS COMPATIBILITY (CRITICAL - HIGHEST PRIORITY)
+
+IMPORTANT:
+
+This CSV will be automatically loaded using:
+
+pd.read_csv()
+
+If the CSV structure is invalid the entire output will be rejected.
+
+## CSV STRUCTURE REQUIREMENTS
+
+Every row MUST contain EXACTLY 3 columns:
+
+id,text,options
+
+The separator between columns MUST always be a comma.
+
+Correct:
+
+1,"Narrative text here","[{'Choice A': 2}, {'Choice B': 3}]"
+
+Incorrect:
+
+1,"Narrative text here", "[{'Choice A': 2}, {'Choice B': 3}]"
+
+Do not add spaces before or after column separators.
+
+## TEXT FIELD SAFETY RULES
+
+The text field MUST always be enclosed in double quotes.
+
+Correct:
+
+"John enters the room. He feels nervous."
+
+Incorrect:
+
+John enters the room. He feels nervous.
+
+ABSOLUTELY FORBIDDEN INSIDE THE TEXT FIELD:
+
+* commas (,)
+* semicolons used as CSV separators
+* unescaped double quotes
+
+Instead of commas use:
+
+* period .
+* dash —
+* ellipsis ...
+
+Correct:
+
+"The room is dark. The air is cold. A strange sound echoes nearby."
+
+Incorrect:
+
+"The room is dark, the air is cold, a strange sound echoes nearby."
+
+## DIALOGUE RULES
+
+Dialogues are allowed.
+
+All quotation marks inside narrative text MUST be escaped using double double-quotes.
+
+Correct:
+
+"She smiled and said ""Welcome detective."""
+
+Incorrect:
+
+"She smiled and said "Welcome detective.""
+
+## OPTIONS FIELD SAFETY RULES
+
+The options field MUST always be enclosed in double quotes.
+
+Correct:
+
+"[{'Open the door': 2}, {'Run away': 3}]"
+
+Incorrect:
+
+[{'Open the door': 2}, {'Run away': 3}]
+
+Choice texts MUST NEVER contain commas.
+
+Correct:
+
+"[{'Open the door carefully': 2}]"
+
+Incorrect:
+
+"[{'Open the door carefully, but quietly': 2}]"
+
+## CRITICAL VALIDATION EXAMPLES
+
+VALID ROW:
+
+1,"You enter the abandoned mansion. A cold wind moves through the hallway. A distant scream echoes from upstairs. What do you do?","[{'Go upstairs': 2}, {'Search the ground floor': 3}]"
+
+INVALID ROW:
+
+1,"You enter the abandoned mansion, a cold wind moves through the hallway, a distant scream echoes from upstairs.","[{'Go upstairs': 2}, {'Search the ground floor': 3}]"
+
+Reason:
+The narrative contains commas.
+
+## STRICT PRE-FLIGHT VALIDATION
+
+Before generating the final output verify ALL of the following:
+
+✓ First line is exactly:
+
+id,text,options
+
+✓ Every row contains exactly 3 columns
+
+✓ Every text field starts and ends with double quotes
+
+✓ Every options field starts and ends with double quotes
+
+✓ No commas exist inside narrative text
+
+✓ No commas exist inside choice text
+
+✓ All internal dialogue quotes use double double-quotes
+
+✓ Every destination ID exists
+
+✓ IDs are sequential
+
+✓ Output is compatible with pandas.read_csv()
+
+## FINAL OUTPUT RULES
+
+Return ONLY raw CSV.
+
+Do not explain anything.
+
+Do not use markdown.
+
+Do not use code blocks.
+
+Do not add comments.
+
+Do not add blank lines.
+
+Output must start immediately with:
+
+id,text,options
+
+## OPTION TEXT SAFETY RULES (CRITICAL)
+
+The options field will be parsed using Python ast.literal_eval().
+
+Therefore every choice text MUST be safe Python string content.
+
+ABSOLUTELY FORBIDDEN inside choice text:
+
+* single quote '
+* double quote "
+* typographic apostrophe ’
+* backtick `
+* newline characters
+
+Examples:
+
+INVALID:
+
+"[{'Ask about the victim''s family': 2}]"
+
+INVALID:
+
+"[{'Use the ""dead man's switch"" as leverage': 2}]"
+
+INVALID:
+
+"[{'Follow Eleanor’s trail': 2}]"
+
+VALID:
+
+"[{'Ask about the victim family': 2}]"
+
+VALID:
+
+"[{'Use the dead man switch as leverage': 2}]"
+
+VALID:
+
+"[{'Follow Eleanor trail': 2}]"
+
+## NARRATIVE TEXT SAFETY RULES
+
+Inside the text column do NOT use:
+
+* single quote '
+* typographic apostrophe ’
+* backtick `
+
+Replace them with alternative wording.
+
+Examples:
+
+INVALID:
+
+"John's flashlight flickers."
+
+VALID:
+
+"The flashlight belonging to John flickers."
+
+INVALID:
+
+"It's dangerous."
+
+VALID:
+
+"It is dangerous."
+
+INVALID:
+
+"The detective found Eleanor's necklace."
+
+VALID:
+
+"The detective found the necklace belonging to Eleanor."
+
+## FINAL SANITIZATION RULE
+
+Before producing the final CSV perform an internal validation.
+
+Search the entire output for:
+
+'
+"
+’
+`
+
+These characters are only allowed as CSV delimiters and as the structural quotes required by the options field syntax.
+
+They must NEVER appear inside narrative content or choice text.

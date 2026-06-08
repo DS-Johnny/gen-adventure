@@ -30,12 +30,18 @@ class Pages(object):
     
 
 if __name__ == "__main__":
-    pages = Pages("gen-adventure/deadpool.csv")
-    print()
+    # pages = Pages("gen-adventure/deadpool.csv")
+    # print()
 
-    print(pages.get_page_text(1))
-    print()
+    # print(pages.get_page_text(1))
+    # print()
 
-    print(pages.get_options(1))
+    # print(pages.get_options(1))
 
-    
+    pages = Pages("gen_adventure/detective.csv")
+
+    print(pages.story_data.index[:5])
+    print(type(pages.story_data.index[0]))
+
+    print(1 in pages.story_data.index)
+    print("1" in pages.story_data.index)

@@ -3,3 +3,8 @@ gen-adventure/__pycache__/
 game.py
 .env
 story_imaginator_original.py
+test.py
+ballerina.csv
+deadpool.csv
+detective.csv
+hacker.csv

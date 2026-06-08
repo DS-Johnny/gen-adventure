@@ -1,15 +1,14 @@
 import os
 from google import genai
-from google.api_core import exceptions
-from google.genai.errors import ServerError
-from dotenv import load_dotenv
+# from google.api_core import exceptions
+# from google.genai.errors import ServerError, ClientError
 
 
 class StoryImaginator(object):
 
     def __init__(self):
         self.gemini_api_key = ''
-        self.instructions_path = 'gen-adventure/instructions.txt'
+        self.instructions_path = 'gen_adventure/instructions.txt'
         self.client = genai.Client(api_key=self.gemini_api_key)
 
     def load_instructions(self):
@@ -19,23 +18,29 @@ class StoryImaginator(object):
 
     def build_prompt(self, theme: str, instructions: str) -> str:
         return f"""
-                Você é um criador de histórias interativas.
+                You are an interactive story creator.
 
-                Tema solicitado:
+                Requested theme:
                 {theme}
 
-                Siga EXATAMENTE as instruções abaixo para gerar a resposta:
+                LANGUAGE RULE:
+
+                If the requested theme is written in English, the entire story must be written in English.
+                If the requested theme is written in Portuguese, the entire story must be written in Portuguese.
+                All narrative text, dialogues, descriptions, endings, and choices must consistently use the same language as the requested theme.
+
+                Follow EXACTLY the instructions below to generate the response:
 
                 {instructions}
 
-                IMPORTANTE:
+                IMPORTANT:
 
-                - Retorne SOMENTE o conteúdo CSV
-                - Não use markdown
-                - Não use ```csv
-                - Não explique nada antes
-                - Não explique nada depois
-                - A primeira linha deve ser:
+                Return ONLY the CSV content.
+                Do not use Markdown.
+                Do not use ```csv.
+                Do not provide any explanation before the CSV.
+                Do not provide any explanation after the CSV.
+                The first line must be exactly:
 
                 id,text,options
                 """
@@ -67,21 +72,12 @@ class StoryImaginator(object):
         self.save_csv(csv_content, filename)
 
 if __name__ == "__main__":
+    from dotenv import load_dotenv
 
     load_dotenv()
 
     imaginator = StoryImaginator()
     imaginator.gemini_api_key = os.getenv("GEMINI_API_KEY")
 
-    try:
-        imaginator.imagine("A detective investigating a murder scene", "gen-adventure/test2.csv")
+    imaginator.imagine("A detective investigating a murder scene", "gen_adventure/test2.csv")
 
-    # except Exception as e:
-    #     print("TIPO:", type(e))
-    #     print("NOME:", type(e).__name__)
-    #     print("MÓDULO:", type(e).__module__)
-    #     print("MENSAGEM:", str(e))
-    #     raise
-
-    except ServerError:
-        print("Error 503! This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.")

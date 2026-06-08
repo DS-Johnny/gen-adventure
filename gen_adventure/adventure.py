@@ -114,7 +114,7 @@ class Adventure(object):
 
                 if event.type == pygame.MOUSEBUTTONDOWN:
                     if self.__button_rect.collidepoint(event.pos):
-                        print("Button Clicked!")
+                        
                         if self.__start_screen:
                             self.__start_screen = False    
                         elif self.__end_screen:
@@ -127,7 +127,6 @@ class Adventure(object):
                             if rect.collidepoint(event.pos):
                                 print(f"You chose: {text}")
                                 opcao = options_dict[self.__option_list.index(text)]
-                                print(opcao)
                                 self.__page = opcao[text]
 
 
@@ -153,6 +152,6 @@ class Adventure(object):
 
 if __name__ == "__main__":
 
-    adventure = Adventure("gen-adventure/detective.csv")
+    adventure = Adventure("gen_adventure/detective.csv")
     
     adventure.start()
