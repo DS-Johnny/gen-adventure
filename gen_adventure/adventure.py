@@ -195,7 +195,7 @@ class Adventure(object):
         player to begin a new adventure.
         """
         end_font = pygame.font.SysFont('rasa', 40)
-        self.draw_multiline_text('The end!', end_font, self.text_color, 600, 500, 600)
+        self.draw_multiline_text('The end!', end_font, self.text_color, 530, 850, 600)
         self.draw_button('Restart')
             
             
@@ -279,6 +279,6 @@ class Adventure(object):
 
 if __name__ == "__main__":
     # adventure = Adventure("gen_adventure/formatura.json")
-    adventure = Adventure("gen_adventure/hacker.json")
+    adventure = Adventure("gen_adventure/fantasy.json")
     
     adventure.start()

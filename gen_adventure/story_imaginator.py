@@ -6,11 +6,11 @@ Google Gemini API to create interactive branching stories and
 export them as JSON files compatible with Gen-Adventure.
 """
 
-
 import os
 from google import genai
 import json
 from google.genai.errors import ServerError
+import requests
 from time import sleep
 
 
@@ -43,17 +43,18 @@ class StoryImaginator(object):
         self.client = genai.Client(api_key=self.gemini_api_key)
 
     def load_instructions(self) -> str:
-        """
-        Load the story generation instructions from disk.
 
-        Returns
-        -------
-        str
-            Complete content of the instructions file.
-        """
-        with open(self.instructions_path, "r", encoding="utf-8") as file:
-            return file.read()
-        
+        url = (
+            "https://raw.githubusercontent.com/"
+            "DS-Johnny/gen-adventure/main/"
+            "gen_adventure/instructions.txt"
+        )
+
+        response = requests.get(url, timeout=10)
+        response.raise_for_status()
+
+        return response.text
+
 
     def build_prompt(self, theme: str, instructions: str) -> str:
         """
@@ -218,6 +219,7 @@ class StoryImaginator(object):
             try:
                 json_content = self.generate_story_json(theme)
                 self.save_json(json_content, filename)
+                print(f"Story file saved at: {filename}")
                 break
 
             except ServerError:
@@ -249,5 +251,5 @@ if __name__ == "__main__":
     imaginator = StoryImaginator()
     imaginator.gemini_api_key = os.getenv("GEMINI_API_KEY")
 
-    imaginator.imagine("A popular girl who is in love with the handsome boy at school", "gen_adventure/love_story.json")
+    imaginator.imagine("A wizard who is chazing a dragon", "gen_adventure/fantasy.json")
 
