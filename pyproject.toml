@@ -38,7 +38,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/seuusuario/gen-adventure"
+Homepage = "https://github.com/DS-Johnny/gen-adventure"
 
 [project.optional-dependencies]
 dev = [
