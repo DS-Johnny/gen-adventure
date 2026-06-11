@@ -10,8 +10,8 @@ export them as JSON files compatible with Gen-Adventure.
 import os
 from google import genai
 import json
-# from google.api_core import exceptions
-# from google.genai.errors import ServerError, ClientError
+from google.genai.errors import ServerError
+from time import sleep
 
 
 class StoryImaginator(object):
@@ -70,14 +70,14 @@ class StoryImaginator(object):
         Parameters
         ----------
         theme : str
-        Theme provided by the user.
+            Theme provided by the user.
         instructions : str
-        Story generation instructions loaded from file.
+            Story generation instructions loaded from file.
 
         Returns
         -------
         str
-        Fully formatted prompt ready to be sent to Gemini.
+            Fully formatted prompt ready to be sent to Gemini.
         """
 
         return f"""
@@ -211,10 +211,35 @@ class StoryImaginator(object):
         filename : str
             Output file path.
         """
+        
+        attempts = 0
 
-        json_content = self.generate_story_json(theme)
+        while attempts <= 5:
+            try:
+                json_content = self.generate_story_json(theme)
+                self.save_json(json_content, filename)
+                break
 
-        self.save_json(json_content, filename)
+            except ServerError:
+                print(
+                    "This model is currently experiencing high demand. "
+                    "Spikes in demand are usually temporary."
+                )
+
+                attempts += 1
+
+                if attempts <= 5:
+                    print("Trying again in 5 seconds...")
+                    sleep(5)
+
+        else:
+            print(
+                "This model is currently experiencing high demand. "
+                "Spikes in demand are usually temporary. "
+                "Please try again later."
+            )
+        
+        
 
 if __name__ == "__main__":
     from dotenv import load_dotenv
@@ -224,5 +249,5 @@ if __name__ == "__main__":
     imaginator = StoryImaginator()
     imaginator.gemini_api_key = os.getenv("GEMINI_API_KEY")
 
-    imaginator.imagine("Uma garota no baile de formatura", "gen_adventure/formatura.json")
+    imaginator.imagine("A popular girl who is in love with the handsome boy at school", "gen_adventure/love_story.json")
 
