@@ -7,7 +7,9 @@ class StoryExamples(object):
 
     def __init__(self) -> None:
         self.fantasy = "https://raw.githubusercontent.com/DS-Johnny/gen-adventure/refs/heads/main/gen_adventure/fantasy.json"
-
+        self.hacker = "https://raw.githubusercontent.com/DS-Johnny/gen-adventure/refs/heads/main/gen_adventure/hacker.json"
+        self.formatura = "https://raw.githubusercontent.com/DS-Johnny/gen-adventure/refs/heads/main/gen_adventure/formatura.json"
+        self.love_story = "https://raw.githubusercontent.com/DS-Johnny/gen-adventure/refs/heads/main/gen_adventure/love_story.json"
 
 
 class Adventure(object):
@@ -289,6 +291,7 @@ if __name__ == "__main__":
     # adventure = Adventure("gen_adventure/formatura.json")
     # adventure = Adventure("gen_adventure/fantasy.json")
     example = StoryExamples()
-    adventure = Adventure(example.fantasy)
+
+    adventure = Adventure(example.formatura)
     
     adventure.start()
