@@ -29,11 +29,12 @@ keywords = [
 dependencies = [
     "pygame>=2.6.0",
     "google-genai>=1.0.0",
-    "pandas>=2.0.0"
+    "requests>=2.0.0"
 ]
 
 classifiers = [
     "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent"
 ]
 
@@ -47,9 +48,5 @@ dev = [
     "build",
     "twine"
 ]
-
-[project.scripts]
-gen-adventure = "gen_adventure.main:main"
-
 [tool.ruff]
 line-length = 88

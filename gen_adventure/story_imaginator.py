@@ -6,7 +6,6 @@ Google Gemini API to create interactive branching stories and
 export them as JSON files compatible with Gen-Adventure.
 """
 
-import os
 from google import genai
 import json
 from google.genai.errors import ServerError
@@ -258,16 +257,3 @@ class StoryImaginator(object):
                 "Spikes in demand are usually temporary. "
                 "Please try again later."
             )
-        
-        
-
-if __name__ == "__main__":
-    from dotenv import load_dotenv
-
-    load_dotenv()
-
-    imaginator = StoryImaginator()
-    imaginator.gemini_api_key = os.getenv("GEMINI_API_KEY")
-
-    imaginator.imagine("A wizard who is chazing a dragon", "gen_adventure/fantasy.json")
-

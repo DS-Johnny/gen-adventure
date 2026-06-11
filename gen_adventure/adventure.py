@@ -46,7 +46,7 @@ containing pages, text content, and branching options.
 
 import pygame
 from pygame.locals import *
-from pages import Pages
+from .pages import Pages
 
 
 class StoryExamples(object):
@@ -343,15 +343,3 @@ class Adventure(object):
     
             # Update the display with the newly rendered frame.
             pygame.display.flip()
-
-    
-
-
-if __name__ == "__main__":
-    # adventure = Adventure("gen_adventure/formatura.json")
-    # adventure = Adventure("gen_adventure/fantasy.json")
-    example = StoryExamples()
-
-    adventure = Adventure(example.formatura)
-    
-    adventure.start()
