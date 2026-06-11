@@ -31,14 +31,15 @@ dependencies = [
     "google-genai>=2.8.0"
 ]
 
-[project.optional-dependencies]
-game = [
-    "pygame>=2.6.1"
-]
 
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent"
+]
+
+[project.optional-dependencies]
+game = [
+    "pygame>=2.6.1"
 ]
 
 [project.urls]
