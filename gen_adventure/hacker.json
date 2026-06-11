@@ -1,0 +1,465 @@
+{
+    "pages": [
+        {
+            "id": 1,
+            "text": "O monitor cintila com uma luz azul-esverdeada, refletindo no rosto tenso de Vulpix. Horas de exploração nas profundezas da rede governamental culminaram neste momento. Uma pasta oculta, rotulada 'Projeto Cronos', continha arquivos criptografados que desafiavam toda a lógica. Ao quebrar a última camada de segurança, imagens e documentos chocantes preencheram a tela: evidências de vigilância em massa, manipulação de eleições e uma conspiração para silenciar vozes dissidentes. Seu coração dispara. O que você vai fazer com essa verdade explosiva?",
+            "options": [
+                {
+                    "text": "Analisar os dados mais a fundo para entender a extensão da conspiração.",
+                    "target": 2
+                },
+                {
+                    "text": "Publicar as informações imediatamente para expor o governo antes que ele reaja.",
+                    "target": 3
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "text": "Você mergulha ainda mais nos arquivos, sua mente um turbilhão de indignação e medo. O 'Projeto Cronos' não era apenas sobre vigilância; havia planos para uma 'reforma' do sistema judicial, que na verdade era uma purgação de juízes e promotores independentes. As implicações são aterrorizantes. A verdade é muito pior do que imaginava, e mantê-la em segredo seria impensável. Mas vazar tudo sozinho parece imprudente. Você precisa de ajuda.",
+            "options": [
+                {
+                    "text": "Contatar Eva, uma jornalista investigativa com reputação de integridade e coragem.",
+                    "target": 4
+                },
+                {
+                    "text": "Procurar 'Cipher', o líder de um notório grupo hacker anônimo.",
+                    "target": 5
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "text": "Movido pela urgência e pela raiva, você publica os arquivos mais comprometedores em vários fóruns e redes sociais anônimas. O caos é instantâneo. A internet explode com a notícia. Portais de notícias começam a replicar, e a hashtag #CronosFiles viraliza. Mas a alegria da vitória é efêmera. Em minutos, seu endereço IP é detectado. Você ouve sirenes ao longe. A retaliação será rápida e brutal. Você precisa agir.",
+            "options": [
+                {
+                    "text": "Abandonar tudo e se esconder em um local seguro que preparou.",
+                    "target": 6
+                },
+                {
+                    "text": "Ficar online um pouco mais para ver a repercussão e tentar apagar seus rastros remotos.",
+                    "target": 7
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "text": "Após um contato cifrado, Eva concorda em um encontro em um café discreto. Ela tem um olhar cansado, mas seus olhos brilham com a chama da verdade. Você apresenta uma pequena amostra dos dados, e ela fica pálida. 'Isso... isso pode derrubar governos', ela sussurra. Ela quer tudo, prometendo proteger sua identidade e garantir que a história seja contada de forma responsável.",
+            "options": [
+                {
+                    "text": "Confiar completamente em Eva e entregar todos os arquivos a ela.",
+                    "target": 8
+                },
+                {
+                    "text": "Entregar a maior parte, mas manter alguns arquivos como um 'seguro' para si mesmo.",
+                    "target": 9
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "text": "Você se conecta a um canal oculto na dark web, enviando uma mensagem para 'Cipher'. A resposta vem em minutos: concisa, profissional. 'O que você tem, Vulpix?' Eles querem provas, não promessas. O grupo 'Legião Zero' de Cipher tem um histórico de derrubar grandes sistemas, mas também é conhecido por seus métodos imprevisíveis.",
+            "options": [
+                {
+                    "text": "Enviar um fragmento crucial dos dados como prova de sua autenticidade.",
+                    "target": 10
+                },
+                {
+                    "text": "Pedir um encontro pessoal, exigindo garantia de segurança.",
+                    "target": 11
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "text": "Você desliga o computador abruptamente, puxa o pen drive e corre para a mochila. Sons de arrombamento ecoam na porta dos fundos. Por um milagre, a janela do quarto dos fundos destrancou. Você pula para o beco, ouvindo gritos de 'Parado, hacker!'. Seu coração martela no peito enquanto corre na escuridão, fugindo da invasão da sua casa por agentes do governo.",
+            "options": [
+                {
+                    "text": "Ir para o seu esconderijo planejado nos arredores da cidade.",
+                    "target": 12
+                },
+                {
+                    "text": "Tentar se misturar na multidão de um terminal de ônibus, buscando o anonimato.",
+                    "target": 13
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "text": "Você assiste, com uma mistura de pavor e fascínio, enquanto a notícia se espalha. O governo lança desinformação, chamando você de 'terrorista cibernético'. Mas a verdade está lá. Sua casa parece segura, por enquanto. Mas então, a campainha toca. Uma batida forte e autoritária. Agentes. Eles te rastrearam em tempo recorde. Você está encurralado.",
+            "options": [
+                {
+                    "text": "Tentar apagar os últimos vestígios e fugir pela porta dos fundos.",
+                    "target": 14
+                },
+                {
+                    "text": "Confrontá-los e tentar ganhar tempo, talvez negociar.",
+                    "target": 15
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "text": "Você entrega a Eva o pen drive com todos os arquivos. A confiança é total. Ela trabalha incansavelmente, e em poucas horas, a matéria mais explosiva da década é publicada em seu portal. As provas são irrefutáveis, os nomes, os planos, tudo. O governo entra em colapso. Protestos eclodem em todo o país. Eva se torna um farol de esperança, e você... você é o vento por trás da vela.",
+            "options": [
+                {
+                    "text": "Ajudar Eva na defesa contra a inevitável campanha de difamação e negação.",
+                    "target": 16
+                },
+                {
+                    "text": "Desaparecer, sabendo que seu trabalho foi feito e a verdade veio à tona.",
+                    "target": 17
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "text": "Você entrega a Eva apenas uma parte dos arquivos, os mais contundentes. Ela publica. A notícia é bombástica, mas o governo tem espaço para desmentir, alegando que são 'dados incompletos' ou 'mal interpretados'. Eva precisa de mais, e você sabe que tem. A pressão sobre ela é imensa, e a sua segurança também está em risco. Você está com a faca e o queijo na mão, mas a lâmina pode cortar dos dois lados.",
+            "options": [
+                {
+                    "text": "Usar os arquivos restantes para refutar as mentiras do governo e fortalecer a matéria de Eva.",
+                    "target": 18
+                },
+                {
+                    "text": "Vender os arquivos restantes no mercado negro para garantir sua fuga e um futuro financeiro seguro.",
+                    "target": 19
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "text": "Cipher responde com uma única palavra: 'Autêntico'. Eles parecem impressionados. 'Temos um canal seguro. Mande mais. Vamos derrubar esses vermes.' A Legião Zero quer sua ajuda para um ataque coordenado, uma 'tempestade perfeita' de vazamentos. A ideia é tentadora, mas o controle estaria dividido.",
+            "options": [
+                {
+                    "text": "Aceitar a ajuda de Cipher e planejar um vazamento coordenado.",
+                    "target": 20
+                },
+                {
+                    "text": "Desconfiar e tentar orquestrar o vazamento sozinho, de forma mais cautelosa.",
+                    "target": 21
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "text": "Em um café movimentado, você encontra Cipher. Não é quem você esperava. Uma figura calma, olhos inteligentes e uma aura de seriedade. Ele ouve sua história e revisa os dados em um tablet seguro. 'Isso é grande', ele diz, a voz baixa. 'A Legião Zero pode amplificar isso de uma forma que você não conseguiria sozinho. Você confia em nós?'",
+            "options": [
+                {
+                    "text": "Entregar os dados a Cipher para que ele os dissemine através da rede da Legião Zero.",
+                    "target": 22
+                },
+                {
+                    "text": "Concordar em trabalhar com ele, mas manter o controle total sobre quando e como os dados são divulgados.",
+                    "target": 23
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "text": "O esconderijo é uma pequena cabana isolada na floresta, sem conexão à rede, apenas um rádio de ondas curtas e comida enlatada. Você está seguro por enquanto, mas isolado. O silêncio é ensurdecedor. O pen drive com os segredos do governo pesa no seu bolso. Você precisa de contato, de mais recursos, de uma forma de lutar.",
+            "options": [
+                {
+                    "text": "Tentar contatar alguns antigos colegas hackers em busca de ajuda.",
+                    "target": 24
+                },
+                {
+                    "text": "Acessar a dark web de forma ultra-segura para buscar informações e recursos.",
+                    "target": 25
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "text": "Você se mistura rapidamente entre a multidão no terminal de ônibus, tentando parecer apenas mais um rosto anônimo. A adrenalina ainda corre em suas veias. De repente, você vê alguns homens de terno, com comunicadores de ouvido, vasculhando a área. Eles te procuram. O disfarce está prestes a falhar.",
+            "options": [
+                {
+                    "text": "Tentar despistá-los em um metrô lotado, usando o caos a seu favor.",
+                    "target": 26
+                },
+                {
+                    "text": "Procurar abrigo em uma embaixada estrangeira próxima, pedindo asilo.",
+                    "target": 27
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "text": "Você corre freneticamente para apagar os últimos rastros digitais. Consegue excluir boa parte, mas ao tentar sair pela porta dos fundos, três agentes uniformizados bloqueiam sua passagem. Suas armas apontadas para você. 'As mãos para cima, hacker!', grita um deles. Não há mais para onde ir.",
+            "options": [
+                {
+                    "text": "Render-se e tentar negociar sua situação, usando os segredos como moeda de troca.",
+                    "target": 28
+                },
+                {
+                    "text": "Fazer uma última tentativa desesperada de fuga, mesmo que pareça impossível.",
+                    "target": 29
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "text": "Você é rapidamente dominado pelos agentes. Algemas frias apertam seus pulsos. Seus computadores são apreendidos, seus dados copiados. O projeto Cronos, por enquanto, permanece um segredo. Seu destino, incerto, mas com certeza não será um final feliz. Você falhou. \n\nFIM: CAPTURADO.",
+            "options": []
+        },
+        {
+            "id": 16,
+            "text": "A campanha de difamação é brutal, mas Eva é uma rocha. Juntos, vocês usam o conhecimento de Vulpix para refutar cada mentira, cada ataque. A opinião pública se volta contra o governo. Mas a luta ainda não acabou. Há ainda mais camadas de corrupção a serem desvendadas, e você sabe onde procurar.",
+            "options": [
+                {
+                    "text": "Focar em expor diretamente o ministro-chave envolvido no 'Projeto Cronos'.",
+                    "target": 30
+                },
+                {
+                    "text": "Engajar ONGs de direitos humanos e organizações internacionais para aumentar a pressão.",
+                    "target": 31
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "text": "Com a verdade exposta e a justiça em movimento, você decide que seu papel terminou. Você apaga seus rastros, cria uma nova identidade e desaparece. Vive uma vida anônima, observando o mundo mudar a partir da sombra, sempre alerta. As memórias dos arquivos, porém, jamais o deixarão. \n\nFIM: DESAPARECIMENTO SILENCIOSO.",
+            "options": []
+        },
+        {
+            "id": 18,
+            "text": "Você envia os arquivos restantes para Eva, incluindo provas irrefutáveis de falsificação de documentos e suborno. A nova matéria explode como uma bomba atômica. O governo é forçado a admitir a verdade. Renúncias começam a pipocar. A sociedade celebra uma vitória da verdade. A revolução começou, impulsionada por seus dedos.",
+            "options": [
+                {
+                    "text": "Continuar a luta contra a corrupção, agora como um justiceiro nas sombras.",
+                    "target": 32
+                },
+                {
+                    "text": "Sair de cena, sabendo que a justiça foi feita e que a verdade prevaleceu.",
+                    "target": 33
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "text": "Você faz contato com um intermediário na dark web e vende os arquivos restantes para um cartel de informação internacional. A quantia é astronômica, o suficiente para uma nova vida em qualquer lugar do mundo. Você foge, desfrutando do luxo, mas o peso de saber que informações tão perigosas estão em mãos erradas nunca o abandona. \n\nFIM: DINHEIRO SUJO E CONSCIÊNCIA PESADA.",
+            "options": []
+        },
+        {
+            "id": 20,
+            "text": "Você e Cipher coordenam os próximos passos. A Legião Zero tem uma rede vasta e recursos técnicos impressionantes. Juntos, vocês planejam um ataque de vazamento em massa, mirando em diversos servidores governamentais simultaneamente. O objetivo é sobrecarregar a capacidade de resposta deles e garantir que a verdade não possa ser contida.",
+            "options": [
+                {
+                    "text": "Participar ativamente da execução do ataque, na linha de frente digital.",
+                    "target": 34
+                },
+                {
+                    "text": "Fornecer os dados e as diretrizes, mas deixar Cipher e seu grupo executarem o vazamento.",
+                    "target": 35
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "text": "Você decide agir sozinho, desconfiando da Legião Zero. Tenta um novo vazamento, mas o governo está em alerta máximo. Cada porta que você tenta abrir é imediatamente fechada. Você sente o cerco se fechando. Precisa de uma nova abordagem, ou um lugar seguro para se reorganizar.",
+            "options": [
+                {
+                    "text": "Tentar um método mais furtivo, buscando compradores ou aliados na dark web.",
+                    "target": 25
+                },
+                {
+                    "text": "Procurar seu esconderijo seguro para se reorganizar e planejar o próximo passo.",
+                    "target": 12
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "text": "Você entrega os arquivos a Cipher, que sorri. 'O mundo vai tremer', ele promete. A divulgação é rápida e massiva, mas a narrativa que ele cria em torno dos vazamentos não é exatamente o que você esperava. Ele se posiciona como o grande herói, e a Legião Zero capitaliza em cima da sua descoberta. Você sente que perdeu o controle.",
+            "options": [
+                {
+                    "text": "Confiar que Cipher, apesar de egocêntrico, fará o certo no final.",
+                    "target": 36
+                },
+                {
+                    "text": "Tentar reaver o controle sobre os dados ou pelo menos copiar o que restou para si.",
+                    "target": 37
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "text": "A parceria com Cipher se prova eficaz. Ele tem a estrutura, você tem a inteligência e os dados. Juntos, vocês formam uma força imparável no mundo digital. O governo mal sabe o que os atingiu. A pergunta agora é: como vocês vão usar esse poder?",
+            "options": [
+                {
+                    "text": "Usar a rede de Cipher para vazar as informações de forma massiva e global.",
+                    "target": 38
+                },
+                {
+                    "text": "Focar em derrubar um alvo governamental específico, o principal articulador da conspiração.",
+                    "target": 39
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "text": "Você consegue fazer contato com um antigo colega, um engenheiro social talentoso. Ele, relutantemente, concorda em ajudar. Com sua perícia, ele cria uma nova identidade para você e elabora uma rota de fuga para um país sem extradição, com recursos mínimos para recomeçar. É uma chance de vida nova, ou de continuar a luta sob outra máscara.",
+            "options": [
+                {
+                    "text": "Aceitar a fuga para o exterior e uma vida longe de tudo.",
+                    "target": 17
+                },
+                {
+                    "text": "Usar a nova identidade para continuar a lutar contra a corrupção, agora com mais discrição.",
+                    "target": 32
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "text": "Na dark web, você encontra uma série de contatos. Um deles é um grupo de mercenários cibernéticos que oferece proteção e recursos em troca de uma parte das informações. Eles não se importam com ética, apenas com poder e dinheiro. A oferta é tentadora em sua desesperança.",
+            "options": [
+                {
+                    "text": "Vender parte das informações para o grupo mercenário em troca de sua proteção e fuga.",
+                    "target": 19
+                },
+                {
+                    "text": "Recusar a oferta e buscar ajuda mais ética, como a jornalista Eva.",
+                    "target": 4
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "text": "Você entra no metrô, a multidão é um borrão de rostos ansiosos. Consegue despistar os agentes, pulando em um vagão no último segundo. Você escapou, mas agora é um fugitivo sem rumo, sem plano, e o governo está em sua cola. Onde buscar ajuda agora?",
+            "options": [
+                {
+                    "text": "Tentar contatar um parente distante em quem confia, mesmo sabendo o risco.",
+                    "target": 12
+                },
+                {
+                    "text": "Procurar comunidades underground de ativistas ou hackers.",
+                    "target": 5
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "text": "Você corre para a embaixada mais próxima, buscando asilo político. Após horas de interrogatório e verificação, eles aceitam seu pedido, mas não sem um preço. Em troca de proteção, eles exigem acesso total aos arquivos do 'Projeto Cronos'. Você se tornaria uma ferramenta nas mãos de outra potência.",
+            "options": [
+                {
+                    "text": "Ceder os arquivos à embaixada, garantindo sua segurança em troca de lealdade.",
+                    "target": 40
+                },
+                {
+                    "text": "Recusar e tentar uma nova fuga, arriscando tudo de novo.",
+                    "target": 29
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "text": "Você é preso, mas consegue negociar. Em troca de sua cooperação e de entregar todos os arquivos, o governo garante uma pena reduzida e proteção de testemunha. Você vive uma vida sob um novo nome, mas a verdade é enterrada, e você se torna um peão em um jogo que nunca quis jogar. \n\nFIM: ACORDO COM O DIABO.",
+            "options": []
+        },
+        {
+            "id": 29,
+            "text": "Em um último ato de desespero, você tenta uma fuga audaciosa. A troca de tiros é intensa, o caos irrompe. Você sente uma dor aguda e tudo escurece. A luz do monitor do Projeto Cronos parece tão distante agora. \n\nFIM: MORTE NA FUGA.",
+            "options": []
+        },
+        {
+            "id": 30,
+            "text": "Com a ajuda de Vulpix, Eva expõe o ministro-chave, revelando suas conexões e seu papel central no 'Projeto Cronos'. O escândalo é monstruoso, levando à renúncia imediata e prisão do ministro. É uma vitória monumental, mas a teia de corrupção ainda é vasta.",
+            "options": [
+                {
+                    "text": "Continuar a expor a corrupção, mirando em outros envolvidos.",
+                    "target": 32
+                },
+                {
+                    "text": "Deixar Eva terminar o trabalho e você sumir do mapa, satisfeito com o resultado.",
+                    "target": 17
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "text": "Você e Eva canalizam as informações para diversas ONGs de direitos humanos e órgãos internacionais. A pressão global aumenta, forçando o governo a iniciar investigações internas e a implementar reformas. É um processo lento, mas as bases para a mudança foram lançadas. A semente da verdade foi plantada.",
+            "options": [
+                {
+                    "text": "Juntar-se ativamente ao movimento ativista, lutando por mudanças contínuas.",
+                    "target": 32
+                },
+                {
+                    "text": "Manter-se como uma fonte anônima, garantindo sua segurança em troca de menos visibilidade.",
+                    "target": 17
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "text": "Vulpix se torna um nome sussurrado nas sombras, um símbolo de resistência. Você continua sua luta digital, desvendando novas camadas de corrupção, sempre um passo à frente do governo. A verdade é sua arma, e a batalha pela liberdade da informação é interminável. A luta continua. \n\nFIM: A LUTA CONTINUA.",
+            "options": []
+        },
+        {
+            "id": 33,
+            "text": "O governo desmorona, os responsáveis são levados à justiça. Você observa de longe, satisfeito por ter cumprido seu dever. A verdade libertou a todos. Você se afasta, encontrando paz na normalidade, sabendo que fez a diferença. \n\nFIM: JUSTIÇA FEITA.",
+            "options": []
+        },
+        {
+            "id": 34,
+            "text": "Você está no centro do furacão digital. O ataque coordenado da Legião Zero é um sucesso esmagador. Servidores caem, informações vazam em uma escala sem precedentes. O governo entra em colapso. O mundo entra em choque. Vulpix e Cipher são aclamados como heróis, ou temidos como terroristas, dependendo de quem você pergunta. A ordem mundial foi abalada.",
+            "options": [
+                {
+                    "text": "Continuar a trabalhar com Cipher para desmantelar completamente o sistema corrupto.",
+                    "target": 32
+                },
+                {
+                    "text": "Desligar-se da Legião Zero e desaparecer na clandestinidade, buscando uma vida normal.",
+                    "target": 33
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "text": "Você fornece os dados e as diretrizes, e Cipher executa o ataque. A escala é massiva, a divulgação é global. O governo é exposto em sua totalidade. Você observa as consequências a partir da sombra, um espectador anônimo de uma revolução que você iniciou, mas não controlou. O impacto é incerto. \n\nFIM: OBSERVADOR ANÔNIMO.",
+            "options": []
+        },
+        {
+            "id": 36,
+            "text": "Cipher usa os dados de forma calculista, manipulando a narrativa para benefício próprio e da Legião Zero. Ele distorce algumas verdades, omite outras, e Vulpix é apenas uma nota de rodapé em sua ascensão ao poder. Você sente uma amarga traição, impotente para corrigir o rumo. \n\nFIM: TRAIÇÃO DE CIPHER.",
+            "options": []
+        },
+        {
+            "id": 37,
+            "text": "Você tenta desesperadamente reaver o controle, mas Cipher é um mestre em segurança e contra-inteligência. Seus acessos são revogados, seus rastros apagados da rede da Legião Zero. Ele estava um passo à frente. Você está de volta à estaca zero, com o risco de ser exposto e sem os dados.",
+            "options": [
+                {
+                    "text": "Tentar uma contra-hackeada ainda mais arriscada, buscando recuperar os dados a todo custo.",
+                    "target": 15
+                },
+                {
+                    "text": "Aceitar a derrota e tentar fugir, talvez vendendo o que restou para garantir sua segurança.",
+                    "target": 19
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "text": "Com a rede e os recursos de Cipher, a divulgação dos segredos do governo é maciça e irrefutável. A verdade inunda a internet, e o mundo assiste ao desmascaramento de uma corrupção inimaginável. O governo entra em pânico, sem conseguir conter a enxurrada de informações.",
+            "options": [
+                {
+                    "text": "Continuar a trabalhar com Cipher para desmantelar o sistema completamente.",
+                    "target": 32
+                },
+                {
+                    "text": "Se desligar de Cipher e ir para a clandestinidade, buscando uma vida normal.",
+                    "target": 33
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "text": "Vulpix e Cipher focam seus esforços em um único alvo: o arquiteto principal do 'Projeto Cronos'. Com uma campanha de vazamentos direcionados e ataques digitais, eles conseguem expor e derrubar o figurão. É uma vitória pessoal e satisfatória, mas o sistema maior, embora abalado, permanece. \n\nFIM: VINGANÇA LOCALIZADA.",
+            "options": []
+        },
+        {
+            "id": 40,
+            "text": "Você entrega os arquivos secretos à embaixada. Em troca, recebe asilo, uma nova identidade e proteção. Você está seguro, mas agora é uma peça em um tabuleiro de xadrez geopolítico maior, seus segredos usados como moeda de troca entre potências. Você trocou uma prisão por outra. \n\nFIM: PEÇA NO JOGO.",
+            "options": []
+        }
+    ]
+}

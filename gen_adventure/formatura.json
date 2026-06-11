@@ -1,0 +1,559 @@
+{
+    "pages": [
+        {
+            "id": 1,
+            "text": "O coração de Sofia batia em ritmo de samba enquanto ela observava seu reflexo no espelho. O vestido azul-noite, com seus brilhos discretos, caía perfeitamente. Era a noite do baile de formatura, um marco, um fim e um começo. Uma mistura de nervosismo e excitação preenchia o ar. Ao descer as escadas de casa, a limusine já esperava, e seus amigos acenavam, impacientes. No salão, a música pulsava, luzes coloridas dançavam pelas paredes e o perfume de flores e colônias pairava no ar. A noite era jovem. Você se sente um pouco sobrecarregada pelo burburinho inicial.",
+            "options": [
+                {
+                    "text": "Ir direto para a pista de dança, sentir a energia.",
+                    "target": 2
+                },
+                {
+                    "text": "Procurar seus amigos na mesa que reservaram para um momento mais tranquilo.",
+                    "target": 3
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "text": "Você caminha em direção à pista de dança, sentindo a batida da música eletrônica vibrar no chão. As pessoas se movem em um ritmo contagiante, e você sente a vontade de se juntar a elas. No entanto, o mar de rostos desconhecidos te faz hesitar por um instante. Você vê alguns grupos animados, outros casais se divertindo. A atmosfera é elétrica.",
+            "options": [
+                {
+                    "text": "Deixar a timidez de lado e começar a dançar.",
+                    "target": 4
+                },
+                {
+                    "text": "Observar um pouco antes de decidir, tentando encontrar um rosto familiar.",
+                    "target": 5
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "text": "Você se esquiva pela multidão em busca da mesa dos seus amigos. Lá, Sarah e Leo já estão rindo alto, dividindo uma garrafa de refrigerante. Eles acenam quando te veem. O alívio de estar em terreno conhecido é imediato. 'Sofia! Você está deslumbrante!' exclama Sarah. Leo concorda com a cabeça. Vocês começam a rir, e o nervosismo inicial se dissipa.",
+            "options": [
+                {
+                    "text": "Contar sobre a sua chegada e o quanto se sentiu nervosa.",
+                    "target": 6
+                },
+                {
+                    "text": "Perguntar como está o baile até agora e se perderam alguma fofoca.",
+                    "target": 7
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "text": "Você se joga na pista, deixando a música te guiar. Os movimentos vêm naturalmente, e você se sente livre, como se todas as preocupações do ano letivo tivessem desaparecido. Você fecha os olhos por um segundo, absorvendo o momento. De repente, sente uma mão gentil no seu ombro. É um garoto que você não reconhece, mas ele sorri de forma amigável.",
+            "options": [
+                {
+                    "text": "Aceitar o convite dele para dançar juntos.",
+                    "target": 8
+                },
+                {
+                    "text": "Recusar educadamente, preferindo continuar dançando sozinha.",
+                    "target": 9
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "text": "Você se afasta um pouco da pista, observando a cena. A iluminação baixa e a fumaça artificial criam um ambiente quase mágico. Seus olhos vagam pela multidão até que você o vê: Daniel, seu crush secreto há anos, está encostado em uma pilastra, olhando para a pista, aparentemente sozinho. Seu coração dá um pulo.",
+            "options": [
+                {
+                    "text": "Criar coragem e ir falar com Daniel.",
+                    "target": 10
+                },
+                {
+                    "text": "Sentir a timidez te dominar e manter distância, nervosa.",
+                    "target": 11
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "text": "Você compartilha os detalhes da sua chegada, as borboletas no estômago e a sensação de que o vestido azul era a escolha perfeita. Sarah e Leo te escutam atentamente, rindo das suas descrições. 'Mas agora a festa começou de verdade, certo?' diz Leo, com um sorriso. Vocês terminam suas bebidas.",
+            "options": [
+                {
+                    "text": "Propor que o grupo vá para a pista de dança.",
+                    "target": 12
+                },
+                {
+                    "text": "Sugerir que peguem mais ponche antes de qualquer coisa.",
+                    "target": 13
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "text": "Seus amigos te atualizam sobre o baile. Eles mencionam que Mariana, a 'rainha do drama' da escola, já arrumou uma briga por causa de um lugar na mesa e que Daniel, curiosamente, está mais quieto que o normal. Sarah diz que ele parecia chateado. Você sente uma pontada no peito.",
+            "options": [
+                {
+                    "text": "Tentar ignorar o drama e focar em se divertir com seus amigos.",
+                    "target": 12
+                },
+                {
+                    "text": "Perguntar mais sobre o drama da Mariana e o que aconteceu com Daniel.",
+                    "target": 14
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "text": "O garoto, que se apresenta como Marcos, tem um sorriso fácil e um jeito descontraído. Vocês se conectam na pista, os movimentos sincronizados. A cada giro, o brilho do seu vestido parece acender. É divertido, leve, sem pressões. Ele te faz rir e esquecer qualquer preocupação.",
+            "options": [
+                {
+                    "text": "Continuar dançando com Marcos, curtindo o momento.",
+                    "target": 15
+                },
+                {
+                    "text": "Desculpar-se e dizer que precisa pegar uma bebida.",
+                    "target": 13
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "text": "Você prefere continuar dançando no seu próprio ritmo, sentindo a energia da música preencher cada célula do seu corpo. Seus olhos se fecham e você se perde na melodia. É um momento de pura liberdade. Ao abrir os olhos, você percebe alguém te observando de longe.",
+            "options": [
+                {
+                    "text": "É Daniel, seu crush, te olhando fixamente. Ir falar com ele.",
+                    "target": 16
+                },
+                {
+                    "text": "É o professor de história, Sr. Silva, que se aproxima com um sorriso.",
+                    "target": 17
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "text": "Respirando fundo, você se aproxima de Daniel. 'Oi', você diz, sua voz um pouco mais alta do que o normal por causa da música. Ele se vira, um pequeno sorriso aparece em seus lábios. 'Oi, Sofia. Você está... incrível'. Seu coração dispara. Ele parece um pouco sem jeito.",
+            "options": [
+                {
+                    "text": "Elogiar a roupa dele, tentando quebrar o gelo.",
+                    "target": 18
+                },
+                {
+                    "text": "Perguntar se ele está gostando do baile, direto ao ponto.",
+                    "target": 19
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "text": "A timidez te vence. Você recua, o observando de longe enquanto ele finalmente se afasta da pilastra e some na multidão. Um suspiro de arrependimento escapa dos seus lábios. Você pensa que perdeu a chance. O que fazer agora?",
+            "options": [
+                {
+                    "text": "Decidir que precisa se animar e ir dançar na pista.",
+                    "target": 4
+                },
+                {
+                    "text": "Ir pegar um ponche para se refrescar e pensar um pouco.",
+                    "target": 13
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "text": "Com a energia renovada, vocês três se dirigem à pista de dança. A música é contagiante, e vocês formam um pequeno círculo, rindo e dançando sem preocupações. É bom ter amigos para compartilhar a alegria. Em um momento de pausa, você percebe Daniel novamente, parado à margem da pista, parecendo pensativo.",
+            "options": [
+                {
+                    "text": "Ver Daniel sozinho novamente e decidir se aproximar dele.",
+                    "target": 20
+                },
+                {
+                    "text": "Uma música lenta começa a tocar. Ignorar Daniel e aproveitar o momento com os amigos.",
+                    "target": 21
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "text": "Vocês vão para a mesa de bebidas. Enquanto enchem os copos de ponche, você percebe Mariana, a garota que sempre foi sua 'rival' acadêmica e social, perto de vocês, com um olhar de desprezo. Ela parece estar acompanhada de suas amigas, cochichando e rindo. Você sente o sangue ferver um pouco.",
+            "options": [
+                {
+                    "text": "Ignorá-la e focar em pegar o ponche com seus amigos.",
+                    "target": 22
+                },
+                {
+                    "text": "Lançar um olhar desafiador e trocar farpas com ela.",
+                    "target": 23
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "text": "Sarah e Leo explicam que Mariana se envolveu em uma discussão com outro colega sobre o \"melhor lugar\" para a foto oficial. E sobre Daniel, eles ouviram dizer que ele e Mariana tiveram uma pequena briga antes do baile. Você sente um misto de preocupação por Daniel e irritação com Mariana.",
+            "options": [
+                {
+                    "text": "Ficar chateada com a fofoca, mas não deixar que estrague a noite. Voltar para a pista.",
+                    "target": 12
+                },
+                {
+                    "text": "Sentir a indignação crescer e decidir que precisa confrontar Mariana.",
+                    "target": 23
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "text": "Enquanto vocês dançam, um tropeço infeliz ou um empurrão da multidão faz com que você derrube um copo de ponche no seu próprio vestido! A mancha escura se espalha pelo tecido azul-noite. Marcos se desculpa profusamente. Você sente um choque, mas o riso dele é contagiante.",
+            "options": [
+                {
+                    "text": "Ir imediatamente para o banheiro tentar limpar a mancha.",
+                    "target": 24
+                },
+                {
+                    "text": "Decidir que não importa, o importante é a diversão. Continuar dançando!",
+                    "target": 25
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "text": "Daniel se aproxima, seu sorriso um pouco mais confiante agora. 'Você dança muito bem', ele diz, a voz um pouco rouca pela música. Seu rosto cora levemente. 'Obrigada', você responde, sentindo o calor do momento. A proximidade dele é diferente de tudo que você imaginou.",
+            "options": [
+                {
+                    "text": "Aproveitar o momento e convidá-lo para dançar.",
+                    "target": 26
+                },
+                {
+                    "text": "Perguntar por que ele estava te observando e se ele está sozinho.",
+                    "target": 27
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "text": "O Sr. Silva se aproxima com um sorriso paternal. 'Sofia! Que bom te ver aqui. Seu vestido está esplêndido. Tenho certeza que fará um ótimo trabalho na faculdade de Letras, você tem um talento incrível.' Ele começa a falar sobre a importância da literatura clássica. Você o admira, mas... é o baile de formatura!",
+            "options": [
+                {
+                    "text": "Ser educada e continuar a conversa com o professor.",
+                    "target": 28
+                },
+                {
+                    "text": "Desculpar-se educadamente e dizer que vai procurar seus amigos.",
+                    "target": 29
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "text": "'Você também está muito bem, Daniel', você diz, notando o terno escuro que o deixa ainda mais charmoso. Ele cora novamente, um sorriso genuíno aparecendo. 'Obrigado. É bom te ver aqui. Não achei que viria.' Você sente que a conexão está crescendo.",
+            "options": [
+                {
+                    "text": "Sugerir que vocês vão para a pista de dança juntos.",
+                    "target": 26
+                },
+                {
+                    "text": "Convidá-lo para pegar algo para beber e conversar mais um pouco.",
+                    "target": 30
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "text": "'Estou...', ele hesita, 'bem. Apenas um pouco cansado das brigas de sempre. Mariana está me irritando'. Ele suspira. 'Mas ver você aqui me animou um pouco'. Seu coração se aquece com as palavras dele. Ele parece realmente precisar de um momento de paz.",
+            "options": [
+                {
+                    "text": "Tentar animá-lo, focando na diversão da noite e no seu lado positivo.",
+                    "target": 18
+                },
+                {
+                    "text": "Deixá-lo em paz com seus pensamentos e voltar para seus amigos.",
+                    "target": 7
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "text": "Você se afasta dos seus amigos por um momento e caminha até Daniel. 'Parece que você está sempre sozinho nos cantos', você brinca, tentando parecer casual. Ele sorri. 'Às vezes é bom observar. Mas acho que estou pronto para me juntar à festa agora'.",
+            "options": [
+                {
+                    "text": "Convidá-lo diretamente para dançar com você.",
+                    "target": 26
+                },
+                {
+                    "text": "Aproveitar a música lenta que começa a tocar, sugerindo um momento de calmaria.",
+                    "target": 21
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "text": "A DJ anuncia uma sequência de músicas lentas. A atmosfera no salão muda, casais se abraçam e amigos dançam juntos, mais próximos. É o momento perfeito para um convite ou um olhar significativo. Você sente um desejo de ter um momento especial.",
+            "options": [
+                {
+                    "text": "Procurar Daniel na multidão e convidá-lo para dançar uma lenta.",
+                    "target": 31
+                },
+                {
+                    "text": "Convidar um de seus amigos, Leo ou Sarah, para dançar com você.",
+                    "target": 32
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "text": "Você ignora Mariana, mas sente o olhar dela queimar nas suas costas. 'Algumas pessoas nunca mudam', Sarah sussurra. Vocês conseguem o ponche e voltam para a mesa. O baile continua, a música te chamando para a pista.",
+            "options": [
+                {
+                    "text": "Voltar para os amigos e continuar a conversa.",
+                    "target": 6
+                },
+                {
+                    "text": "Ir para a pista de dança, sentindo a música te guiar.",
+                    "target": 4
+                }
+            ]
+        },
+        {
+            "id": 23,
+            "text": "Você lança um olhar de volta para Mariana. 'Problemas de novo, Mariana? Achei que o baile de formatura era para se divertir, não para criar drama'. Ela cruza os braços, os olhos faiscando. 'Isso não é da sua conta, Sofia. Pelo menos eu não derrubo ponche no meu vestido!' Você lembra do acidente, mesmo que ele não tenha acontecido nesta linha do tempo. Ela está te provocando.",
+            "options": [
+                {
+                    "text": "Continuar a discussão, não vai deixar ela estragar sua noite.",
+                    "target": 33
+                },
+                {
+                    "text": "Decidir que não vale a pena e se afastar, buscando outro lugar.",
+                    "target": 29
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "text": "No banheiro, a mancha do ponche parece resistir a qualquer tentativa de limpeza. Enquanto você esfrega, você ouve vozes abafadas vindo de uma das cabines. '...o plano tem que funcionar. Ninguém vai descobrir a troca dos votos para Rei e Rainha'. Seu coração gela. Uma sabotagem?",
+            "options": [
+                {
+                    "text": "Tentar ouvir mais de perto, sem ser percebida.",
+                    "target": 34
+                },
+                {
+                    "text": "Ignorar a conversa, focar em limpar o vestido e voltar para a festa.",
+                    "target": 35
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "text": "Você decide que uma mancha não vai estragar sua noite! Com Marcos, ou talvez sozinha, você volta para a pista, rindo do ocorrido. O vestido está um pouco manchado, mas a alegria te faz esquecer. Você se sente mais leve e livre do que nunca. A música continua tocando, e a noite é sua.",
+            "options": [
+                {
+                    "text": "Continuar dançando na pista, até que Daniel se aproxima.",
+                    "target": 36
+                },
+                {
+                    "text": "Se juntar aos seus amigos, contando a eles sobre o incidente do ponche.",
+                    "target": 37
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "text": "Você e Daniel se entregam à música. É uma dança fácil, confortável, quase como se vocês tivessem feito isso um milhão de vezes. Há uma química inegável entre vocês. Os olhos dele encontram os seus, e um sorriso gentil se forma em seus lábios. Você sente uma conexão que vai além da pista de dança.",
+            "options": [
+                {
+                    "text": "Continuar dançando com ele a noite toda, perdidos um no outro.",
+                    "target": 38
+                },
+                {
+                    "text": "Sugerir um breve descanso para pegar algo para beber e conversar.",
+                    "target": 30
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "text": "'Eu estava sozinho por um tempo', Daniel admite, 'porque Mariana veio me incomodar sobre uma coisa boba. Mas então eu te vi e... bom, você parecia estar se divertindo'. Ele te olha nos olhos. 'E o que você está fazendo aqui sozinha?'",
+            "options": [
+                {
+                    "text": "Aproveitar a oportunidade para se aproximar e mudar de assunto para algo mais leve.",
+                    "target": 18
+                },
+                {
+                    "text": "Aconselhá-lo a tentar conversar com Mariana, resolver as coisas para aproveitar a noite.",
+                    "target": 19
+                }
+            ]
+        },
+        {
+            "id": 28,
+            "text": "Você se envolve em uma conversa profunda sobre a história da literatura com o Sr. Silva. Ele é um homem erudito e fascinante, mas o clima do baile não é o ideal para um debate acadêmico. Seus pés começam a doer e a música vibrante da pista parece chamar seu nome.",
+            "options": [
+                {
+                    "text": "Agradecer educadamente ao professor e se desculpar, indo para outro lugar.",
+                    "target": 29
+                },
+                {
+                    "text": "Fazer uma piada sobre a matéria, tentando aliviar a tensão acadêmica.",
+                    "target": 39
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "text": "Você se afasta da conversa ou da briga, sentindo a necessidade de mudar o ambiente. A música alta ainda te convida para a diversão. Seus amigos podem estar por perto ou talvez uma nova aventura na pista de dança. A noite ainda é longa e cheia de possibilidades.",
+            "options": [
+                {
+                    "text": "Ir para a pista de dança, buscando esquecer o ocorrido.",
+                    "target": 4
+                },
+                {
+                    "text": "Procurar seus amigos na mesa, em busca de conforto e risadas.",
+                    "target": 3
+                }
+            ]
+        },
+        {
+            "id": 30,
+            "text": "Vocês se afastam da pista, pegam mais ponche e encontram um canto mais tranquilo para conversar. Vocês falam sobre a escola, os planos para o futuro, e os sonhos de vocês. Daniel é muito mais profundo e interessante do que você imaginava. O tempo voa, e a sintonia é palpável.",
+            "options": [
+                {
+                    "text": "Daniel te convida para a próxima dança, uma música lenta acaba de começar.",
+                    "target": 31
+                },
+                {
+                    "text": "Enquanto conversam, o diretor sobe ao palco para anunciar o Rei e a Rainha do baile.",
+                    "target": 36
+                }
+            ]
+        },
+        {
+            "id": 31,
+            "text": "Você aceita o convite de Daniel para a dança lenta. Os corpos se aproximam, as mãos se tocam. Você sente uma eletricidade suave. Ele te guia com confiança, e vocês dançam como se fossem os únicos no salão. Os olhos dele brilham sob as luzes. É um momento mágico, saído de um filme.",
+            "options": [
+                {
+                    "text": "Confessar seus sentimentos por ele, mesmo com medo da rejeição.",
+                    "target": 38
+                },
+                {
+                    "text": "Apenas curtir o momento, deixando a dança falar por si só.",
+                    "target": 36
+                }
+            ]
+        },
+        {
+            "id": 32,
+            "text": "Você dança a música lenta com um dos seus amigos. É divertido, familiar, e você se sente à vontade. Não há romance, mas sim uma profunda amizade e alegria. Vocês riem, relembram momentos e celebram a conclusão de mais um capítulo. A noite continua vibrante.",
+            "options": [
+                {
+                    "text": "O diretor se prepara para anunciar o Rei e a Rainha do baile.",
+                    "target": 36
+                },
+                {
+                    "text": "Propor que vocês continuem a festa em outro lugar depois do baile.",
+                    "target": 37
+                }
+            ]
+        },
+        {
+            "id": 33,
+            "text": "A discussão com Mariana escala. Ela eleva a voz, e algumas pessoas começam a olhar. 'Você sempre quis ser o centro das atenções, não é, Sofia?', ela grita, atraindo mais olhares. Você se sente exposta e envergonhada, o clima do baile se quebra. Suas amigas tentam te acalmar.",
+            "options": [
+                {
+                    "text": "Tentar ignorar os olhares, se virar e se afastar da briga, respirando fundo.",
+                    "target": 29
+                },
+                {
+                    "text": "Você sente que a noite foi arruinada. É melhor ir para casa agora.",
+                    "target": 40
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "text": "Você se cala, mas ouve com clareza: duas garotas estavam planejando trocar os votos para garantir que uma delas (provavelmente Mariana) ganhasse o título de Rainha do Baile. Uma sensação de indignação te consome. Isso é injusto e desonesto! Você tem uma decisão importante a tomar.",
+            "options": [
+                {
+                    "text": "Contar sobre o plano de sabotagem para a organização do baile imediatamente.",
+                    "target": 39
+                },
+                {
+                    "text": "Manter segredo, não querendo causar mais drama no baile. Voltar para a festa.",
+                    "target": 35
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "text": "A mancha no vestido está lá, visível, apesar dos seus esforços. Você sente uma pontada de desânimo. O vestido perfeito não está mais tão perfeito. Você pode tentar ignorar e voltar para a festa, ou deixar que isso estrague sua noite.",
+            "options": [
+                {
+                    "text": "Decidir que não vai deixar uma mancha estragar seu baile e voltar à festa.",
+                    "target": 25
+                },
+                {
+                    "text": "Você se sente muito envergonhada e desanimada. É melhor ir para casa.",
+                    "target": 40
+                }
+            ]
+        },
+        {
+            "id": 36,
+            "text": "De repente, as luzes da pista diminuem e um holofote ilumina o palco. O diretor sobe, microfone em mãos. 'Caros formandos, é hora do momento mais aguardado da noite! Vamos anunciar o Rei e a Rainha do baile de formatura!' Uma onda de aplausos e gritos preenche o salão. Seu coração bate forte.",
+            "options": [
+                {
+                    "text": "Você ouve seu nome ser chamado como a Rainha do Baile! Uma surpresa total!",
+                    "target": 40
+                },
+                {
+                    "text": "Daniel é chamado como o Rei do Baile, mas o seu nome não é mencionado como Rainha.",
+                    "target": 40
+                },
+                {
+                    "text": "Outros nomes são chamados. Você não é o Rei nem a Rainha, mas se diverte.",
+                    "target": 40
+                }
+            ]
+        },
+        {
+            "id": 37,
+            "text": "Seus amigos te abraçam, rindo e elogiando sua atitude. Vocês decidem que o baile é bom, mas a companhia é melhor. 'Que tal irmos para outro lugar depois daqui?', sugere Sarah. A ideia de uma 'after-party' ou de apenas um lanche juntos para continuar as conversas parece perfeita. A noite é sobre amizade e memórias.",
+            "options": [
+                {
+                    "text": "Continuar a festa em outro lugar, prolongando a noite com seus melhores amigos.",
+                    "target": 40
+                },
+                {
+                    "text": "Apenas ir para casa, cansada mas feliz com as risadas e a companhia.",
+                    "target": 40
+                }
+            ]
+        },
+        {
+            "id": 38,
+            "text": "Você e Daniel se perdem um no outro na pista de dança. Seus olhos se encontram, e as palavras se tornam desnecessárias. Há uma promessa tácita de algo mais entre vocês. Ele te beija suavemente. É o tipo de momento que você vai lembrar para sempre. A noite é de vocês, e o futuro parece brilhante.",
+            "options": [
+                {
+                    "text": "Ele te leva para casa no final do baile, marcando o início de algo especial.",
+                    "target": 40
+                },
+                {
+                    "text": "Vocês ficam juntos até o último minuto do baile, de mãos dadas, sem se importar com mais nada.",
+                    "target": 40
+                }
+            ]
+        },
+        {
+            "id": 39,
+            "text": "Sua decisão gera consequências. Se você fez a piada com o professor, ele se sente constrangido, ri sem graça e rapidamente se afasta, encerrando a conversa de forma abrupta. Se você denunciou a sabotagem, a organização intervém, discretamente, e o diretor se prepara para o anúncio do Rei e da Rainha, agora com a votação corrigida. O baile segue seu rumo, mas com a sua intervenção. ",
+            "options": [
+                {
+                    "text": "O professor se afasta, você volta à pista para dançar e curtir a festa.",
+                    "target": 29
+                },
+                {
+                    "text": "A votação é corrigida e o diretor sobe ao palco para anunciar os vencedores.",
+                    "target": 36
+                }
+            ]
+        },
+        {
+            "id": 40,
+            "text": "O baile de formatura termina, mas as memórias desta noite permanecerão com você para sempre. Seja com um novo romance, a coroa de Rainha, risadas com amigos ou a sensação de ter feito a coisa certa, você levou consigo uma experiência inesquecível. Você fecha os olhos, um sorriso em seu rosto, sonhando com o futuro. Fim da história.",
+            "options": []
+        }
+    ]
+}

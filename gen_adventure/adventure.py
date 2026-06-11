@@ -3,6 +3,12 @@ from pygame.locals import *
 from pages import Pages
 
 
+class StoryExamples(object):
+
+    def __init__(self) -> None:
+        self.fantasy = "https://raw.githubusercontent.com/DS-Johnny/gen-adventure/refs/heads/main/gen_adventure/fantasy.json"
+
+
 
 class Adventure(object):
     """
@@ -276,10 +282,13 @@ class Adventure(object):
             # Update the display with the newly rendered frame.
             pygame.display.flip()
 
+    
+
 
 if __name__ == "__main__":
     # adventure = Adventure("gen_adventure/formatura.json")
     # adventure = Adventure("gen_adventure/fantasy.json")
-    adventure = Adventure("gen_adventure/fantasy.json")
+    example = StoryExamples()
+    adventure = Adventure(example.fantasy)
     
     adventure.start()

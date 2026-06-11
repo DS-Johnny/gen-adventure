@@ -1,0 +1,456 @@
+{
+    "pages": [
+        {
+            "id": 1,
+            "text": "The scent of freshly waxed floors and old textbooks filled the air, a familiar comfort for most, but for Samantha, it was just background noise to her racing heart. Her eyes were fixed on the back of Ethan Vance's head, two rows ahead in Calculus. He was sketching something in his notebook, probably some intricate circuit design or a new character for a story. He was everything she wasn't: quiet, intensely focused, and seemingly oblivious to the social hierarchy she effortlessly navigated. Being the 'it' girl of Northwood High had its perks – endless invitations, a loyal clique, and a steady stream of admirers. But none of them were Ethan. What do you do?",
+            "options": [
+                {
+                    "text": "Continue to discreetly observe Ethan.",
+                    "target": 2
+                },
+                {
+                    "text": "Try to catch his eye, maybe with a subtle smile.",
+                    "target": 3
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "text": "You watch Ethan, admiring the way his hair falls just so, the concentration etched on his profile. He seems so engrossed in his world. A pang of doubt hits you. Would he even notice you? Would he care? The bell rings, jolting you from your thoughts. Ethan packs up quickly, his sketchbook tucked away. This class is over. What's your next move?",
+            "options": [
+                {
+                    "text": "Try to 'accidentally' bump into him in the hallway.",
+                    "target": 4
+                },
+                {
+                    "text": "Decide to talk to Chloe, your best friend, about your Ethan dilemma.",
+                    "target": 5
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "text": "You lean forward slightly, a perfectly crafted, innocent smile gracing your lips. Ethan, sensing something, turns his head just as you meet his gaze. For a split second, his eyes, the color of warm honey, lock with yours. He offers a small, almost imperceptible nod before turning back to his notebook. Your heart does a little flutter. The bell rings. Now what?",
+            "options": [
+                {
+                    "text": "Feel encouraged and try to talk to him as he leaves class.",
+                    "target": 6
+                },
+                {
+                    "text": "Play it cool and discuss it with Chloe later.",
+                    "target": 5
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "text": "The hallway is a chaotic river of students. You subtly quicken your pace, aiming for the perfect collision near his locker. Just as you're about to execute your plan, Jake, the star quarterback and your on-again, off-again fling, claps a hand on your shoulder. \"Hey Sam, party at my place tonight?\" he grins, effectively blocking your path to Ethan, who has already disappeared into the crowd. You sigh internally. What do you do?",
+            "options": [
+                {
+                    "text": "Politely decline Jake's invitation and try to find Ethan.",
+                    "target": 7
+                },
+                {
+                    "text": "Accept Jake's invitation, putting Ethan on hold for now.",
+                    "target": 8
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "text": "You find Chloe by her locker, meticulously applying lip gloss. \"Girl, you will not believe...\" you begin, spilling your guts about Ethan and your struggles. Chloe listens, her eyes wide. \"Ethan Vance? The smart one? Oh, Sam, you never go for the quiet types!\" she giggles. \"But he's super cute. So, what's the plan?\"",
+            "options": [
+                {
+                    "text": "Ask Chloe for advice on how to approach him.",
+                    "target": 9
+                },
+                {
+                    "text": "Decide to observe him more, gather intel first.",
+                    "target": 10
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "text": "You quickly gather your books and weave through the departing students. \"Ethan!\" you call out, a little louder than intended. He turns, a questioning look on his face. \"Oh, hey. Samantha, right?\" he says, a faint blush dusting his cheeks. You feel a surge of confidence. \"Yeah, that's me! Just wanted to say, uh, great sketch in class.\" He looks surprised. What do you say next?",
+            "options": [
+                {
+                    "text": "\"What were you drawing? It looked really cool.\"",
+                    "target": 11
+                },
+                {
+                    "text": "\"I was wondering if you could help me with that calculus problem from yesterday?\"",
+                    "target": 12
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "text": "\"Sorry, Jake, can't tonight. Got a lot on my plate.\" You give him a quick, dismissive smile and scan the hallway, but Ethan is nowhere in sight. You missed your chance. Frustration bubbles inside you. Maybe this is harder than you thought. What do you do now?",
+            "options": [
+                {
+                    "text": "Head to your next class, feeling a bit dejected.",
+                    "target": 13
+                },
+                {
+                    "text": "Text Chloe to vent about the missed opportunity.",
+                    "target": 14
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "text": "You force a smile for Jake. \"Sure, why not? See you there.\" As you walk away, a tiny part of you regrets choosing the easy path. Another night of loud music, superficial conversations, and no Ethan. But at least you're maintaining your 'it' girl status. What's next?",
+            "options": [
+                {
+                    "text": "Go to Jake's party and try to forget about Ethan for a while.",
+                    "target": 15
+                },
+                {
+                    "text": "Spend the evening thinking about how to approach Ethan later.",
+                    "target": 16
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "text": "\"Okay, so, classic move,\" Chloe begins, lowering her voice conspiratorially. \"Find out what he's into. Is he in any clubs? What does he eat for lunch? Then, BAM! You're suddenly interested in the same thing, or you have 'extra' lunch. Easy!\" She winks. You ponder her advice. It sounds a bit calculated, but effective. What do you do?",
+            "options": [
+                {
+                    "text": "Decide to discreetly 'investigate' Ethan's interests.",
+                    "target": 10
+                },
+                {
+                    "text": "Reject Chloe's plan, opting for a more genuine approach.",
+                    "target": 17
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "text": "For the next few days, you become a master of subtle espionage. You notice Ethan often visits the library, sometimes sketching, sometimes reading dense-looking books. He carries a worn copy of a sci-fi novel. You also overhear him talking about the Robotics Club. This is good intel. What's your next move?",
+            "options": [
+                {
+                    "text": "Borrow the same sci-fi novel and 'accidentally' read it near him.",
+                    "target": 18
+                },
+                {
+                    "text": "Consider joining the Robotics Club, even if it's not 'your thing'.",
+                    "target": 19
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "text": "Ethan's eyes light up. \"Oh, just a concept for a new drone model I'm working on. It's for the regional competition next month.\" He pulls out the sketchbook again, showing you a detailed diagram. \"It's pretty complicated, but I think I've almost got the aerodynamics figured out.\" He looks at you expectantly. You're genuinely impressed. What do you say?",
+            "options": [
+                {
+                    "text": "\"That's incredible! I never would've guessed. How do you even start something like that?\"",
+                    "target": 20
+                },
+                {
+                    "text": "\"Wow, a drone. That's... futuristic. So, about that calculus homework...\"",
+                    "target": 12
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "text": "Ethan's expression shifts slightly, a hint of disappointment flashing across his face. \"Oh, right. The calculus.\" He quickly flips to a page in his own notebook. \"Which problem? The one with the derivatives?\" He explains it patiently, and you pretend to follow, but your mind is elsewhere. You missed an opportunity to connect. After he's done, he says, \"See you in class.\" and walks away. You feel a pang of regret. What's next?",
+            "options": [
+                {
+                    "text": "Try to find another way to talk to him soon.",
+                    "target": 13
+                },
+                {
+                    "text": "Decide to re-evaluate your strategy with Chloe.",
+                    "target": 14
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "text": "You head to your next class, a cloud of disappointment hanging over you. You replay the missed encounter with Ethan and Jake's interruption. Maybe you're overthinking this. Or maybe, you're not trying hard enough. The day passes in a blur. What do you decide for tomorrow?",
+            "options": [
+                {
+                    "text": "Be more direct, no more subtle attempts.",
+                    "target": 21
+                },
+                {
+                    "text": "Try a different, less obvious approach.",
+                    "target": 10
+                }
+            ]
+        },
+        {
+            "id": 14,
+            "text": "You text Chloe: 'Jake totally cockblocked me with Ethan! Ugh!' Chloe texts back immediately: 'OMG nooo! But honey, Jake is hot too. Just saying.' You sigh. Chloe means well, but sometimes her advice isn't exactly what you need. You need a plan. What's the plan?",
+            "options": [
+                {
+                    "text": "Ask Chloe for specific ideas for a low-key interaction.",
+                    "target": 9
+                },
+                {
+                    "text": "Decide to go it alone, using your own instincts.",
+                    "target": 17
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "text": "Jake's party is exactly what you expected: loud music, flashing lights, and everyone wanting a piece of Samantha. You dance, you laugh, you flirt, but a part of you feels hollow. You catch sight of Jake across the room, grinning at you. He's charming, he's easy, but he's not Ethan. By the end of the night, Jake corners you. \"So, Sam, what do you say? Just us?\" he whispers. Do you give in?",
+            "options": [
+                {
+                    "text": "Say yes to Jake, opting for familiarity and comfort.",
+                    "target": 22
+                },
+                {
+                    "text": "Decline Jake, knowing your heart is set on Ethan.",
+                    "target": 23
+                }
+            ]
+        },
+        {
+            "id": 16,
+            "text": "The party noise fades into the background of your mind. You spend the evening trying to come up with a foolproof plan to talk to Ethan. Maybe a note? Too childish. A direct approach? Too bold. You toss and turn that night, your head filled with possibilities. The next day, you feel determined. What's the plan?",
+            "options": [
+                {
+                    "text": "Try to engineer a 'chance' meeting in the library.",
+                    "target": 18
+                },
+                {
+                    "text": "Ask a teacher if you can be paired with Ethan for a project.",
+                    "target": 24
+                }
+            ]
+        },
+        {
+            "id": 17,
+            "text": "You decide against Chloe's calculated approach. It feels too much like a game, and you want something real with Ethan, if anything. You'll rely on your own charm and authenticity. But how to get his attention genuinely? You spot him in the library, deep in a book. This could be your chance. What do you do?",
+            "options": [
+                {
+                    "text": "Approach him directly and strike up a conversation.",
+                    "target": 25
+                },
+                {
+                    "text": "Sit at a nearby table and try to catch his eye later.",
+                    "target": 18
+                }
+            ]
+        },
+        {
+            "id": 18,
+            "text": "You find the sci-fi novel Ethan was reading, *Galactic Odyssey*, and head to the library. You take a seat at a table a few rows behind him, pretending to be engrossed in the book. After a few minutes, you 'accidentally' drop your pen, letting it roll towards his table. He looks up, startled, and then sees you. He picks up your pen. \"Hey, Samantha. You reading *Galactic Odyssey*?\" he asks, a small smile playing on his lips. \"It's one of my favorites.\" Your heart soars. What do you say?",
+            "options": [
+                {
+                    "text": "\"It's amazing! I'm just getting into sci-fi, and this one was recommended. Any other suggestions?\"",
+                    "target": 26
+                },
+                {
+                    "text": "\"Oh, yeah, just for a class project.\" (Lie to seem less interested)",
+                    "target": 27
+                }
+            ]
+        },
+        {
+            "id": 19,
+            "text": "Joining the Robotics Club seems like a drastic step for the queen bee, but desperate times call for desperate measures. You show up at the next meeting, feeling completely out of place. Ethan is there, focused intently on a circuit board. When he sees you, he looks genuinely surprised. \"Samantha? What are you doing here?\" he asks, a faint smile forming. \"Well, uh, I'm thinking about... getting into robotics,\" you stammer. What's next?",
+            "options": [
+                {
+                    "text": "Try to ask him to show you the basics.",
+                    "target": 28
+                },
+                {
+                    "text": "Observe from a distance, trying to understand what's happening.",
+                    "target": 29
+                }
+            ]
+        },
+        {
+            "id": 20,
+            "text": "\"That's incredible! I never would've guessed. How do you even start something like that?\" you ask, genuinely fascinated. Ethan's face lights up. \"It's all about breaking it down into smaller problems,\" he explains, gesturing enthusiastically. He starts to tell you about the design process, the coding, the challenges. You listen, mesmerized by his passion. The bell rings again, too soon. \"I, uh, I gotta run to class,\" he says, looking almost regretful. \"But maybe we could talk more later?\" Your heart leaps. What's your reply?",
+            "options": [
+                {
+                    "text": "\"I'd love that! Where can I find you?\"",
+                    "target": 30
+                },
+                {
+                    "text": "\"Sure, if you help me with calculus sometime.\"",
+                    "target": 12
+                }
+            ]
+        },
+        {
+            "id": 21,
+            "text": "The next day, you walk into Calculus with a newfound resolve. No more games. You see Ethan at his usual spot. After class, you march straight up to him. \"Ethan, hey.\" He looks up, a bit startled. \"I was wondering if you'd be free to, uh, grab a coffee sometime? Just us?\" You hold your breath. This is it. What's his reaction?",
+            "options": [
+                {
+                    "text": "He smiles, a genuine, warm smile.",
+                    "target": 31
+                },
+                {
+                    "text": "He looks uncomfortable and hesitant.",
+                    "target": 32
+                }
+            ]
+        },
+        {
+            "id": 22,
+            "text": "\"Yeah, Jake. Just us.\" You lean in and kiss him. The cheers from the party fill your ears, a temporary balm for the ache of Ethan. You spend the rest of high school as Jake's girlfriend, the power couple everyone expects. You're popular, you're admired, but sometimes, late at night, you wonder what could have been if you'd pursued the boy who sketched drones instead of the one who threw parties. You chose the easy path, and now you walk it. The end.",
+            "options": []
+        },
+        {
+            "id": 23,
+            "text": "\"Thanks, Jake, but I think I'm gonna head home.\" You give him a gentle push. He looks a little disappointed but respects your decision. As you walk home, the cool night air clears your head. You realize you can't waste another moment. You need to be brave. You need to talk to Ethan. The next day, you feel a surge of purpose. What's your plan?",
+            "options": [
+                {
+                    "text": "Go to the library, hoping to find him there.",
+                    "target": 17
+                },
+                {
+                    "text": "Try the direct approach after Calculus.",
+                    "target": 21
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "text": "You approach Ms. Davies after class. \"Ms. Davies, I was hoping to get some extra help with the advanced physics project. I heard Ethan Vance is really good at it, and I was wondering if you could pair us up?\" Ms. Davies raises an eyebrow, a hint of a smile on her face. \"Ethan? He is quite brilliant. I suppose I could... Yes, I'll pair you two up. Meet in the library after school tomorrow to discuss it.\" Success! What do you do next?",
+            "options": [
+                {
+                    "text": "Prepare thoroughly for your study session with Ethan.",
+                    "target": 33
+                },
+                {
+                    "text": "Tell Chloe about your brilliant plan.",
+                    "target": 34
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "text": "You walk confidently towards Ethan's table in the library. \"Hey, Ethan.\" He looks up, startled, his book falling slightly. \"Oh, hey Samantha. Everything okay?\" he asks, a little nervously. You smile. \"Yeah, everything's great. Just wondering, what are you reading? You always seem to have the most interesting books.\" What's his reaction?",
+            "options": [
+                {
+                    "text": "He looks pleased and starts talking about his book.",
+                    "target": 26
+                },
+                {
+                    "text": "He seems a bit overwhelmed and closes the book.",
+                    "target": 35
+                }
+            ]
+        },
+        {
+            "id": 26,
+            "text": "Ethan's face lights up. \"Oh, this? It's *Stardust Symphony*, a classic space opera. I'm a huge fan of speculative fiction. Have you read anything by K.J. Parker? Or Octavia Butler?\" He gestures to the empty chair beside him. \"Want to sit? I could tell you about it.\" You smile, a genuine, happy smile. This is perfect. What do you do?",
+            "options": [
+                {
+                    "text": "Sit down and let him tell you about his favorite books.",
+                    "target": 36
+                },
+                {
+                    "text": "Suggest you two should study together sometime instead.",
+                    "target": 33
+                }
+            ]
+        },
+        {
+            "id": 27,
+            "text": "\"Oh, yeah, just for a class project.\" You immediately regret the lie. Ethan's enthusiastic smile falters. \"Oh, I see. Well, it's a great book, project or not.\" He seems to deflate slightly, and a wall goes up between you. He nods, picks up his pen, and goes back to his book. You sit there, feeling foolish. You've pushed him away. The end.",
+            "options": []
+        },
+        {
+            "id": 28,
+            "text": "\"Could you maybe show me how this works? I'm completely lost,\" you ask, gesturing vaguely at the circuit board. Ethan hesitates for a moment, then smiles. \"Sure, come closer.\" He patiently explains the components, his fingers pointing to various wires and chips. You lean in, captivated not just by the technology, but by his focused expression, the way his brows furrow slightly when he explains something complex. This is working. What do you do next?",
+            "options": [
+                {
+                    "text": "Suggest you two work on a small project together after the meeting.",
+                    "target": 37
+                },
+                {
+                    "text": "Simply enjoy the moment and learn from him.",
+                    "target": 38
+                }
+            ]
+        },
+        {
+            "id": 29,
+            "text": "You decide to observe, feeling a bit awkward and out of your element. You watch Ethan interact with other club members, seeing a side of him that's vibrant and engaged. You realize you don't really fit in here, and your attempt feels forced. You quietly slip out of the meeting, a sense of defeat washing over you. This wasn't the right path. The end.",
+            "options": []
+        },
+        {
+            "id": 30,
+            "text": "\"I'd love that! Where can I find you?\" you blurt out, a wide smile on your face. Ethan grins back, a truly open, genuine smile. \"I'm usually in the library after school, or at the Robotics Club. Or just... catch me around.\" He pauses. \"How about we meet in the library tomorrow, say, 4 PM? We can talk drones, or anything else.\" Your heart leaps. \"Perfect! See you then!\" You walk away feeling lighter than air, your confidence soaring. This is happening. The end.",
+            "options": []
+        },
+        {
+            "id": 31,
+            "text": "Ethan's eyes crinkle at the corners, a genuine smile spreading across his face. \"I'd love that, Samantha. How about Saturday? There's a new coffee shop downtown with great chai lattes.\" Your heart pounds in your chest. \"Saturday sounds perfect!\" You exchange numbers, and as you walk away, a giddy laugh escapes you. This is it. This is really happening. You two spend a wonderful afternoon, talking for hours. It’s the beginning of something beautiful. The end.",
+            "options": []
+        },
+        {
+            "id": 32,
+            "text": "Ethan's eyes dart around, clearly uncomfortable. \"Oh, um, coffee? I... I'm really busy with school projects and the robotics competition, you know?\" He shifts his weight. \"I don't really have time.\" His rejection, however gentle, stings. You try to play it cool. \"No worries, just thought I'd ask.\" You walk away, your facade cracking. It was too direct, too sudden. You feel a familiar ache of disappointment. You realize that sometimes, being the 'it' girl doesn't get you everything you want. The end.",
+            "options": []
+        },
+        {
+            "id": 33,
+            "text": "You spend the evening reviewing the physics material, even though you barely understood half of it before. You want to impress him, show him you're serious. The next day, you meet Ethan in the library. He's already there, surrounded by textbooks. \"Hey,\" he greets you warmly. \"So, this project, I was thinking we could focus on sustainable energy models. What do you think?\" What's your response?",
+            "options": [
+                {
+                    "text": "\"That sounds brilliant! I'm really excited to learn from you.\"",
+                    "target": 39
+                },
+                {
+                    "text": "\"Actually, I was hoping we could discuss more about your drone designs.\"",
+                    "target": 40
+                }
+            ]
+        },
+        {
+            "id": 34,
+            "text": "You text Chloe: 'Guess who's paired with Ethan Vance for a physics project?! Your girl is a genius!' Chloe replies with a string of fire emojis and 'GET IT, GIRL!'. You feel a rush of triumph. This is the perfect plan. You'll spend hours with him, bonding over Newton's laws. What do you do next?",
+            "options": [
+                {
+                    "text": "Prepare thoroughly for the study session.",
+                    "target": 33
+                },
+                {
+                    "text": "Let your confidence soar, perhaps a bit too much.",
+                    "target": 40
+                }
+            ]
+        },
+        {
+            "id": 35,
+            "text": "Ethan closes his book, a nervous tremor in his hands. \"Oh, uh, it's nothing too interesting. Just a textbook.\" He avoids your gaze. \"I should probably get going, actually. Lot of studying to do.\" He quickly gathers his things and almost rushes out of the library. You stand there, bewildered and hurt. Your directness, usually a weapon, backfired spectacularly. He was clearly intimidated, or perhaps just not interested. You realize you misjudged the situation entirely. The end.",
+            "options": []
+        },
+        {
+            "id": 36,
+            "text": "You sit beside Ethan, your heart thrumming. He talks passionately about *Stardust Symphony*, describing characters and plot points with vivid detail. You listen intently, occasionally asking questions, genuinely enjoying his enthusiasm. You find yourself drawn into his world. Hours pass like minutes. As the library closes, he walks you out. \"I really enjoyed that, Samantha,\" he says, a soft smile on his face. \"Me too, Ethan. More than you know.\" You exchange numbers, promising to talk more. You've found a genuine connection. The end.",
+            "options": []
+        },
+        {
+            "id": 37,
+            "text": "\"That's awesome, Ethan! You're so good at this. Maybe we could work on something together, just a small project, after the meeting?\" you suggest, a hopeful glint in your eye. Ethan pauses, considering. \"That sounds like fun, Samantha! I'd like that. What do you have in mind?\" Your heart leaps. You just secured more time with him, and a shared interest. This is promising. The end.",
+            "options": []
+        },
+        {
+            "id": 38,
+            "text": "You simply enjoy the moment, absorbing everything Ethan says. You learn a lot, not just about robotics, but about the quiet, brilliant boy beside you. As the meeting ends, you thank him. \"That was actually really interesting, Ethan. Thanks for explaining.\" He smiles warmly. \"Anytime, Samantha. Maybe I'll see you next week?\" You nod, feeling a genuine connection, even if it's just friendship for now. You leave feeling hopeful, having built a foundation. The end.",
+            "options": []
+        },
+        {
+            "id": 39,
+            "text": "\"That sounds brilliant! I'm really excited to learn from you.\" You meet his enthusiasm with your own. You two delve into the project, and you find yourself surprisingly engaged, learning new things and seeing Ethan's brilliance up close. You work well together, the hours flying by. By the end of the project, you've not only gotten an A, but you've forged a deep connection. He sees past your 'popular' facade, and you see his true self. One afternoon, after submitting your project, he looks at you. \"Samantha, I've really enjoyed our time together. More than just for the project.\" He blushes. \"Would you want to go out sometime, just us?\" Your smile is radiant. This is everything you hoped for. The end.",
+            "options": []
+        },
+        {
+            "id": 40,
+            "text": "\"Actually, I was hoping we could discuss more about your drone designs,\" you say, trying to steer the conversation away from the physics. Ethan's brow furrows slightly. \"Oh. Well, this is a physics project, Samantha. We should probably focus on the task at hand.\" He gives you a polite but firm look. You realize you've miscalculated, coming off as unfocused or even manipulative. The atmosphere becomes awkward. The study session is productive, but emotionally distant. You got what you wanted – time with Ethan – but not in the way you truly desired. The end.",
+            "options": []
+        }
+    ]
+}
