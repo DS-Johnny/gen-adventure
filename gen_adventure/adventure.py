@@ -278,6 +278,7 @@ class Adventure(object):
 
 
 if __name__ == "__main__":
-    adventure = Adventure("gen_adventure/formatura.json")
+    # adventure = Adventure("gen_adventure/formatura.json")
+    adventure = Adventure("gen_adventure/hacker.json")
     
     adventure.start()
