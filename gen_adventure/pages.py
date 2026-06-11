@@ -1,3 +1,24 @@
+"""
+Manage story data loaded from a JSON file.
+
+Expected JSON structure:
+
+{
+    "pages": [
+        {
+            "id": 1,
+            "text": "...",
+            "options": [
+                {
+                    "text": "...",
+                    "target": 2
+                }
+            ]
+        }
+    ]
+}
+"""
+
 import json
 
 class Pages(object):
