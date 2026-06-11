@@ -49,3 +49,6 @@ dev = [
 ]
 [tool.ruff]
 line-length = 88
+
+[tool.setuptools.packages.find]
+include = ["gen_adventure*"]
