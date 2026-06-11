@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gen-adventure"
+version = "0.1.0"
+description = "Generate and play AI-powered interactive adventures."
+readme = "README.md"
+requires-python = ">=3.11"
+
+authors = [
+    {name = "Johnny Matos"}
+]
+
+license = "MIT"
+
+keywords = [
+    "ai",
+    "game",
+    "adventure",
+    "pygame",
+    "gemini",
+    "interactive",
+    "story",
+    "fantasy"
+]
+
+dependencies = [
+    "pygame>=2.6.0",
+    "google-genai>=1.0.0",
+    "pandas>=2.0.0"
+]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+Homepage = "https://github.com/seuusuario/gen-adventure"
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "ruff",
+    "build",
+    "twine"
+]
+
+[project.scripts]
+gen-adventure = "gen_adventure.main:main"
+
+[tool.ruff]
+line-length = 88
