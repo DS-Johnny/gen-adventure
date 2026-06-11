@@ -27,9 +27,13 @@ keywords = [
 ]
 
 dependencies = [
-    "pygame>=2.6.0",
-    "google-genai>=1.0.0",
-    "requests>=2.0.0"
+    "requests>=2.32.5",
+    "google-genai>=2.8.0"
+]
+
+[project.optional-dependencies]
+game = [
+    "pygame>=2.6.1"
 ]
 
 classifiers = [
@@ -40,13 +44,6 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/DS-Johnny/gen-adventure"
 
-[project.optional-dependencies]
-dev = [
-    "pytest",
-    "ruff",
-    "build",
-    "twine"
-]
 [tool.ruff]
 line-length = 88
 
