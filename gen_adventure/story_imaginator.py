@@ -43,14 +43,32 @@ class StoryImaginator(object):
         self.client = genai.Client(api_key=self.gemini_api_key)
 
     def load_instructions(self) -> str:
+        """
+        Download the story generation instructions from the project's
+        GitHub repository.
 
+        Returns
+        -------
+        str
+            Content of the instructions file.
+
+        Raises
+        ------
+        requests.exceptions.RequestException
+            Raised if the instructions file cannot be retrieved.
+        """
+
+        # Raw GitHub URL containing the story generation rules.
         url = (
             "https://raw.githubusercontent.com/"
             "DS-Johnny/gen-adventure/main/"
             "gen_adventure/instructions.txt"
         )
 
+        # Download the instructions file.
         response = requests.get(url, timeout=10)
+
+        # Raise an exception for HTTP errors.
         response.raise_for_status()
 
         return response.text

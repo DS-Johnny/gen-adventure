@@ -27,6 +27,9 @@ class Pages(object):
     Manage story data and provide methods for retrieving page content,
     available options, and navigation targets.
 
+    Story data can be loaded either from a local JSON file or from a
+    remote JSON resource accessible through an HTTP/HTTPS URL.
+
     The story is loaded from a JSON file during initialization and
     stored in memory for quick access throughout the game.
 
@@ -52,25 +55,28 @@ class Pages(object):
 
     def __init__(self, story_path: str) -> None:
         """
-        Load the story data from a JSON file.
+        Load story data from a local JSON file or a remote URL.
 
         Parameters
         ----------
         story_path : str
-            Path to the JSON file containing the story structure.
+            Local file path or HTTP/HTTPS URL pointing to a story JSON file.
         """
         self.story_path = story_path
         self.story_data = {}
         
         # Load the complete story into memory.
         if self.story_path.startswith("http"):
-
+            
+            # Download story data from a remote JSON resource.
             response = requests.get(self.story_path)
             response.raise_for_status()
             
             self.story_data = response.json()
 
         else:
+
+            # Load story data from a local JSON file.
             with open(self.story_path, 'r', encoding='utf-8') as f:
                 self.story_data = json.load(f)
         

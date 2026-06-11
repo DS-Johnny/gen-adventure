@@ -1,11 +1,71 @@
+"""
+Adventure game module.
+
+This module provides the Adventure class, which renders and manages
+interactive branching stories created for Gen-Adventure.
+
+Stories can be loaded from:
+
+- Local JSON files.
+- Remote JSON files hosted on the web.
+- Built-in example stories available through StoryExamples.
+
+Examples
+--------
+Run a local story:
+
+>>> from gen_adventure import Adventure
+>>>
+>>> game = Adventure("my_story.json")
+>>> game.start()
+
+Run one of the built-in example stories:
+
+>>> from gen_adventure import Adventure, StoryExamples
+>>>
+>>> examples = StoryExamples()
+>>> game = Adventure(examples.fantasy)
+>>> game.start()
+
+Customize the game colors:
+
+>>> from gen_adventure import Adventure
+>>>
+>>> game = Adventure("my_story.json")
+>>>
+>>> game.text_color = (255, 255, 255)
+>>> game.background_color = (25, 25, 25)
+>>> game.button_background_color = (50, 50, 50)
+>>>
+>>> game.start()
+
+Story files must follow the Gen-Adventure JSON structure,
+containing pages, text content, and branching options.
+"""
+
+
 import pygame
 from pygame.locals import *
 from pages import Pages
 
 
 class StoryExamples(object):
+    """
+    Provide URLs to example stories hosted in the project's repository.
+
+    These examples can be used to quickly test the game without
+    generating a new story with Gemini.
+
+    Available stories include different genres and themes that
+    demonstrate the branching story format supported by
+    Gen-Adventure.
+    """
 
     def __init__(self) -> None:
+        """
+        Initialize the collection of example story URLs.
+        """
+
         self.fantasy = "https://raw.githubusercontent.com/DS-Johnny/gen-adventure/refs/heads/main/gen_adventure/fantasy.json"
         self.hacker = "https://raw.githubusercontent.com/DS-Johnny/gen-adventure/refs/heads/main/gen_adventure/hacker.json"
         self.formatura = "https://raw.githubusercontent.com/DS-Johnny/gen-adventure/refs/heads/main/gen_adventure/formatura.json"
