@@ -20,6 +20,7 @@ Expected JSON structure:
 """
 
 import json
+import requests
 
 class Pages(object):
     """
@@ -62,8 +63,16 @@ class Pages(object):
         self.story_data = {}
         
         # Load the complete story into memory.
-        with open(self.story_path, 'r', encoding='utf-8') as f:
-            self.story_data = json.load(f)
+        if self.story_path.startswith("http"):
+
+            response = requests.get(self.story_path)
+            response.raise_for_status()
+            
+            self.story_data = response.json()
+
+        else:
+            with open(self.story_path, 'r', encoding='utf-8') as f:
+                self.story_data = json.load(f)
         
     
     def get_options(self, page_id: int) -> tuple[list, list | None]:
