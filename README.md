@@ -91,15 +91,25 @@ Create a story and save it as a JSON file:
 ```python
 from gen_adventure import StoryImaginator
 
-imaginator = StoryImaginator()
-
-imaginator.gemini_api_key = "YOUR_GEMINI_API_KEY"
+imaginator = StoryImaginator("YOUR_GEMINI_API_KEY")
 
 imaginator.imagine(
     "A cyberpunk hacker fighting an evil corporation",
     "cyberpunk_story.json"
 )
 ```
+Standard Gemini model is 'gemini-2.5-flash', but you can change into another model you prefer.
+Changing Gemini model:
+
+```python
+from gen_adventure import StoryImaginator
+
+imaginator = StoryImaginator("YOUR_GEMINI_API_KEY")
+imaginator.model = "gemini-3.5-flash"
+
+```
+
+
 
 The generated file can then be loaded into the game:
 
@@ -109,6 +119,9 @@ from gen_adventure import Adventure
 game = Adventure("cyberpunk_story.json")
 game.start()
 ```
+
+
+
 
 ---
 
@@ -181,9 +194,7 @@ Generate a story:
 ```python
 from gen_adventure import StoryImaginator
 
-imaginator = StoryImaginator()
-
-imaginator.gemini_api_key = "YOUR_GEMINI_API_KEY"
+imaginator = StoryImaginator("YOUR_GEMINI_API_KEY")
 
 imaginator.imagine(
     "A medieval knight searching for a lost kingdom",

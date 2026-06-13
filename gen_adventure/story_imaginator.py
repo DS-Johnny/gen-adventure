@@ -25,7 +25,7 @@ class StoryImaginator(object):
     - Validating and saving the generated JSON output.
     """
 
-    def __init__(self) -> None:
+    def __init__(self, gemini_api_key) -> None:
         """
         Initialize the Gemini client and configure default paths.
 
@@ -33,10 +33,8 @@ class StoryImaginator(object):
         to generate interactive stories.
         """
 
-        self.gemini_api_key = ''
-
-        # Path to the prompt instructions file.
-        self.instructions_path = 'gen_adventure/instructions.txt'
+        self.gemini_api_key = gemini_api_key
+        self.model = "gemini-2.5-flash"
 
         # Gemini API client.
         self.client = genai.Client(api_key=self.gemini_api_key)
@@ -181,7 +179,7 @@ class StoryImaginator(object):
 
         # Request content generation from Gemini.
         response = self.client.models.generate_content(
-            model="gemini-2.5-flash",
+            model=self.model,
             contents=prompt
         )
 
