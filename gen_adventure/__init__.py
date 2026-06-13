@@ -6,9 +6,11 @@ Generate and play AI-powered interactive adventures.
 
 from .adventure import Adventure, StoryExamples
 from .story_imaginator import StoryImaginator
+from .pages import Pages
 
 __all__ = [
     "Adventure",
     "StoryExamples",
-    "StoryImaginator"
+    "StoryImaginator",
+    "Pages"
 ]

@@ -4,16 +4,20 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gen-adventure"
-version = "0.1.1"
+version = "0.1.7"
 description = "Generate and play AI-powered interactive adventures."
 readme = "README.md"
 requires-python = ">=3.11"
+license = "MIT"
+dependencies = [
+    "requests",
+    "google-genai",
+    "pygame",
+]
 
 authors = [
     {name = "Johnny Matos"}
 ]
-
-license = "MIT"
 
 keywords = [
     "ai",
@@ -26,27 +30,16 @@ keywords = [
     "fantasy"
 ]
 
-dependencies = [
-    "requests>=2.32.5",
-    "google-genai>=2.8.0"
-]
-
-
 classifiers = [
     "Programming Language :: Python :: 3",
     "Operating System :: OS Independent"
 ]
 
-[project.optional-dependencies]
-game = [
-    "pygame>=2.6.1"
-]
-
 [project.urls]
 Homepage = "https://github.com/DS-Johnny/gen-adventure"
 
-[tool.ruff]
-line-length = 88
-
 [tool.setuptools.packages.find]
 include = ["gen_adventure*"]
+
+[tool.ruff]
+line-length = 88
