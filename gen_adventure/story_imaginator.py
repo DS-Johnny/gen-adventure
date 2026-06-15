@@ -25,12 +25,17 @@ class StoryImaginator(object):
     - Validating and saving the generated JSON output.
     """
 
-    def __init__(self, gemini_api_key) -> None:
+    def __init__(self, gemini_api_key: str) -> None:
         """
         Initialize the Gemini client and configure default paths.
 
         The instructions file contains the rules and structure used
         to generate interactive stories.
+
+        Parameters
+        ----------
+        gemini_api_key : str
+            Gemini API KEY (use of .env recommended)
         """
 
         self.gemini_api_key = gemini_api_key
