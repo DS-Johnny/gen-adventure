@@ -5,6 +5,7 @@ gen_adventure/__init__.py
 gen_adventure/adventure.py
 gen_adventure/pages.py
 gen_adventure/story_imaginator.py
+gen_adventure/teste.py
 gen_adventure.egg-info/PKG-INFO
 gen_adventure.egg-info/SOURCES.txt
 gen_adventure.egg-info/dependency_links.txt
